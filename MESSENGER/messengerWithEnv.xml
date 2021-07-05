@@ -1,0 +1,4 @@
+<Environment>
+  <Robot file="messenger_robot.xml"></Robot>
+  <Kinbody name="obstacle1">
+    
