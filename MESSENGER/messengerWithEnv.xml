@@ -1,4 +1,6 @@
 <Environment>
   <Robot file="messenger_robot.xml"></Robot>
   <Kinbody name="obstacle1">
-    
+    <Body type="static">
+      <Geom type="box">
+	<extents>0.005 0.005 0.03</extents
