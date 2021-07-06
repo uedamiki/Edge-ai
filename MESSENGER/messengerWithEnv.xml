@@ -10,4 +10,7 @@
     </Body>
   </Kinbody>
   <Kinbody name="obstacle2">
-    <Body type="static"
+    <Body type="static">
+      <Geom type="box">
+	<extents>0.005 0.005 0.03</extents>
+	<Translation>-0.03 -0.01 0.0</Tr
