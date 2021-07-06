@@ -13,4 +13,7 @@
     <Body type="static">
       <Geom type="box">
 	<extents>0.005 0.005 0.03</extents>
-	<Translation>-0.03 -0.01 0.0</Tr
+	<Translation>-0.03 -0.01 0.0</Translation>
+	<diffusecolor>1.00 0.2745 0.1608</diffusecolor>
+      </Geom>
+    <
