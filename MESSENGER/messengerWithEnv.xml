@@ -30,4 +30,6 @@
   <Kinbody name="obstacle4">
     <Body type="static">
       <Geom type="box">
-	<extents>0.005
+	<extents>0.005 0.005 0.03</extents>
+	<Translation>0.04 -0.01 0.0</Translation>
+	<diffusecolor>1
