@@ -32,4 +32,9 @@
       <Geom type="box">
 	<extents>0.005 0.005 0.03</extents>
 	<Translation>0.04 -0.01 0.0</Translation>
-	<diffusecolor>1
+	<diffusecolor>1.00 0.2745 0.1608</diffusecolor>
+      </Geom>
+    </Body>
+  </Kinbody>
+  <Kinbody name="obstacle5">
+    <Body t
