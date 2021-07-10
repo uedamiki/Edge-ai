@@ -37,4 +37,7 @@
     </Body>
   </Kinbody>
   <Kinbody name="obstacle5">
-    <Body t
+    <Body type="static">
+      <Geom type="box">
+	<extents>0.005 0.005 0.03</extents>
+	<Trans
