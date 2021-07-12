@@ -1,0 +1,4 @@
+<Robot>
+  <Kinbody name="MESSENGER">
+    <body type="dynamic">
+      <geo
