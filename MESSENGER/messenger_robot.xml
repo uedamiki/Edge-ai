@@ -1,4 +1,6 @@
 <Robot>
   <Kinbody name="MESSENGER">
     <body type="dynamic">
-      <geo
+      <geom type="trimesh" modifiable="false">
+	<data>MESSENGER.stl 0.001</data>
+	<render>MESSENGER.stl
