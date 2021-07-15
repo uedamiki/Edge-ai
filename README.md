@@ -13,4 +13,9 @@ https://github.com/quangounet/TOPP
 
 - Clone this TOPP-SO3 folder, then go to that repository and run
 
-   $ su
+   $ sudo python setup.py install
+
+
+Examples
+------------
+Please try the test files in the examples folder (test-
