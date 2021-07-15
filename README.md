@@ -18,4 +18,6 @@ https://github.com/quangounet/TOPP
 
 Examples
 ------------
-Please try the test files in the examples folder (test-
+Please try the test files in the examples folder (test-SO3.py and test-SE3.py)
+
+Below is the video demonstrating the resultin
