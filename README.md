@@ -8,4 +8,5 @@ For further details, please see more at our paper: "H. Nguyen, Q.-C. Pham. Time-
 Requirements
 ------------
 
-- As this implementation is an extention of TOPP (time-optimal Path Parameterization), re
+- As this implementation is an extention of TOPP (time-optimal Path Parameterization), read instructions in following link to install TOPP, OpenRAVE and prerequisites:
+https:/
