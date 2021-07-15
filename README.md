@@ -9,4 +9,8 @@ Requirements
 ------------
 
 - As this implementation is an extention of TOPP (time-optimal Path Parameterization), read instructions in following link to install TOPP, OpenRAVE and prerequisites:
-https:/
+https://github.com/quangounet/TOPP
+
+- Clone this TOPP-SO3 folder, then go to that repository and run
+
+   $ su
