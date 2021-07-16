@@ -111,3 +111,54 @@ lietraj1 = lie.SplitTraj2(Rlist, rottraj1)
 # M = eye(4)
 # for t in linspace(0, lietraj1.duration,5*100): 
 #     M[:3,:3] = lietraj1.EvalRotation(t)
+#     M[:3, 3] = transtraj1.Eval(t)
+#     robot.SetTransform(M)
+#     isincollision = (env.CheckCollision(robot, CollisionReport()))
+#     if (isincollision):
+#         print "in collision", " ", t, "/" , lietraj1.duration
+#     time.sleep(0.01)
+
+############################### SHORTCUTTING ################################
+print "\033[93mRunning SHORTCUTING", "\033[0m"
+se3traj2, Rlist2 = Utils.SE3Shortcut(robot, taumax, fmax, vmax, se3traj1, Rlist, 200)#, -1,0,-1,1)
+
+#print se3traj2.duration
+
+transtraj2, rottraj2 = Utils.TransRotTrajFromSE3Traj(se3traj2)
+lietraj2 = lie.SplitTraj2(Rlist2, rottraj2)
+
+M = eye(4)
+for t in linspace(0, lietraj2.duration, 5*100): 
+    M[:3,:3] = lietraj2.EvalRotation(t)
+    M[:3, 3] = transtraj2.Eval(t)
+    robot.SetTransform(M)
+    isincollision = (env.CheckCollision(robot, CollisionReport()))
+    if (isincollision):
+        print "in collision", " ", t, "/" , lietraj2.duration
+    time.sleep(0.01)
+
+
+print "\033[1;94mFinal trajectory duration: ", se3traj2.duration, " sec.\033[0m"
+
+# Utils.PlotSE3(se3traj2, Rlist2, 0.01, 0,vmax,taumax,taumax,fmax,np.eye(3))
+
+# #################### SAVE se3traj ############################################
+# Utils.SaveSE3trajAsTextFiles(se3traj1, Rlist,  "se3Rlist1.txt", "se3trajlist1.txt")
+# Utils.SaveSE3trajAsTextFiles(se3traj2, Rlist2, "se3Rlist2.txt", "se3trajlist2.txt")
+
+
+###########################LOAD SE3TRAJ ##########################################
+# se3traj3, Rlist3 = Utils.ReadSE3TrajFiles("se3Rlist2.txt", "se3trajlist2.txt")
+
+# transtraj3, rottraj3 = Utils.TransRotTrajFromSE3Traj(se3traj3)
+# lietraj3 = lie.SplitTraj2(Rlist3, rottraj3)
+
+# M = eye(4)
+# for t in linspace(0, lietraj3.duration, 5*100): 
+#     M[:3,:3] = lietraj3.EvalRotation(t)
+#     M[:3, 3] = transtraj3.Eval(t)
+#     robot.SetTransform(M)
+#     isincollision = (env.CheckCollision(robot, CollisionReport()))
+#     if (isincollision):
+#         print "in collision", " ", t, "/" , lietraj3.duration
+#     time.sleep(0.01)
