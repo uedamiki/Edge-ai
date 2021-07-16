@@ -44,3 +44,75 @@ inertia = eye(3)
 
 vertex_beg = Vertex(Config(q0,omega0), FW)
 vertex_end = Vertex(Config(q1,omega1), BW)
+biRRTinstance = RRTPlanner(vertex_beg, vertex_end, robot)
+
+allottedtime = 600
+biRRTinstance.Run(allottedtime)
+
+Rlist = biRRTinstance.GenFinalRotationMatrixList()
+Trajlist = biRRTinstance.GenFinalTrajList()
+lietraj = lie.LieTraj(Rlist,Trajlist)
+
+ion()
+
+## Visualize 
+# M = eye(4)
+# for t in linspace(0, lietraj.duration, 1000): 
+#     M[:3,:3] = lietraj.EvalRotation(t)
+#     robot.SetTransform(M)
+#     isincollision = (env.CheckCollision(robot, CollisionReport()))
+#     if (isincollision):
+#         print "in collision", " ", t, "/" , lietraj.duration
+#     time.sleep(0.01)
+
+################################# TOPP #############################################
+discrtimestep= 1e-2
+constraintsstring = str(discrtimestep)
+constraintsstring += "\n" + ' '.join([str(v) for v in taumax])
+for v in inertia:
+    constraintsstring += "\n" + ' '.join([str(i) for i in v])
+# Note that, when Inertia is an Identity matrix, angular accelerations are the same as torques
+print "\033[93mRunning TOPP", "\033[0m"
+
+t_topp_start = time.time()
+traj = Trajectory.PiecewisePolynomialTrajectory.FromString(Utils.TrajStringFromTrajList(Trajlist))
+
+abc = TOPPbindings.RunComputeSO3Constraints(str(traj),constraintsstring)
+a,b,c = lie.Extractabc(abc)
+# a,b,c = lie.ComputeSO3Constraints(traj, taumax, discrtimestep) #This is the implementation of computing SO3Constraints in Python
+topp_inst = TOPP.QuadraticConstraints(traj, discrtimestep, vmax, list(a), list(b), list(c))
+
+x = topp_inst.solver
+
+ret = x.RunComputeProfiles(0,0)
+if ret == 1:
+    x.ReparameterizeTrajectory()
+    x.WriteResultTrajectory()
+
+traj1 = Trajectory.PiecewisePolynomialTrajectory.FromString(x.restrajectorystring)
+t_topp_end = time.time()
+
+print "\033[1;32mRunning time:",t_topp_end-t_topp_start, "sec.\033[0m"
+print "\033[93mDone", "\033[0m"
+lietraj1 = lie.SplitTraj2(Rlist, traj1)
+
+#---Visualize----
+# M = eye(4)
+
+# for t in linspace(0, lietraj1.duration, 1000): 
+#     M[:3,:3] = lietraj1.EvalRotation(t)
+#     robot.SetTransform(M)
+#     isincollision = (env.CheckCollision(robot, CollisionReport()))
+#     if (isincollision):
+#         print "in collision", " ", t, "/" , lietraj1.duration
+#     time.sleep(0.01)
+
+################################ SHORTCUTTING ############################
+
+print "\033[93mRunning SHORTCUTTING", "\033[0m"
+
+taumax = ones(3)
+vmax = ones(3)
+lietraj2 = Utils.Shortcut(robot, taumax, vmax, lietraj1, 200, -1, 0, -1, inertia)
+
+print "\033[93mDone", "\033[0m"
