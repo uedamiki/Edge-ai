@@ -20,4 +20,6 @@ Examples
 ------------
 Please try the test files in the examples folder (test-SO3.py and test-SE3.py)
 
-Below is the video demonstrating the resultin
+Below is the video demonstrating the resulting trajectories found by our algorithm.
+
+https://youtu.be/heM7uxGrfVc
