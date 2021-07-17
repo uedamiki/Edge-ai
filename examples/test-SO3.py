@@ -116,3 +116,40 @@ vmax = ones(3)
 lietraj2 = Utils.Shortcut(robot, taumax, vmax, lietraj1, 200, -1, 0, -1, inertia)
 
 print "\033[93mDone", "\033[0m"
+
+print "\033[1;94mFinal trajectory duration: ", lietraj2.duration, " sec.\033[0m"
+
+#---Visualize----
+M = eye(4)
+for t in linspace(0, lietraj2.duration, 1000): 
+    M[:3,:3] = lietraj2.EvalRotation(t)
+    robot.SetTransform(M)
+    isincollision = (env.CheckCollision(robot, CollisionReport()))
+    if (isincollision):
+        print "in collision", " ", t, "/" , lietraj2.duration
+    time.sleep(0.01)
+
+# lietraj2.Plot(0.01,0,vmax,taumax,taumax,inertia)
+
+################# SAVE LIETRAJ #########################################
+#Utils.SaveLietrajAsTextFiles(lietraj1, "Rlist1.txt", "trajlist1.txt")
+#Utils.SaveLietrajAsTextFiles(lietraj2, "Rlist2.txt", "trajlist2.txt")
+
+
+#-------------------- Plotting the MVC and the profiles --------------------#
+# x.WriteProfilesList()
+# x.WriteSwitchPointsList()
+# profileslist = TOPPpy.ProfilesFromString(x.resprofilesliststring)
+# switchpointslist = TOPPpy.SwitchPointsFromString(x.switchpointsliststring)
+# TOPPpy.PlotProfiles(profileslist, switchpointslist, 4)
+
+
+##########################LOAD LIETRAJ #################################
+# lietraj4 = Utils.ReadLieTrajFiles("Rlist2.txt", "trajlist2.txt")
+# for t in linspace(0, lietraj4.duration, 1000): 
+#     M[:3,:3] = lietraj4.EvalRotation(t)
+#     robot.SetTransform(M)
+#     isincollision = (env.CheckCollision(robot, CollisionReport()))
+#     if (isincollision):
+#         print "in collision", " ", t, "/" , lietraj4.duration
+#     time.sleep(0.01)
