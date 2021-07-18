@@ -8,4 +8,7 @@ class Heap():
            nlevels -- level of the heap
            indices -- a list of indices of each member in the heap
     """
- 
+    
+    def __init__(self, datalist):
+        self.data = datalist
+        self.size = len
