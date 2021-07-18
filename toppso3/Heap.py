@@ -5,4 +5,7 @@ class Heap():
        Attributes:
            data    -- a list of data
            size    -- the number of data in the list
-           nlevels -- level of the 
+           nlevels -- level of the heap
+           indices -- a list of indices of each member in the heap
+    """
+ 
