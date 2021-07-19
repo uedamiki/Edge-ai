@@ -11,4 +11,6 @@ class Heap():
     
     def __init__(self, datalist):
         self.data = datalist
-        self.size = len
+        self.size = len(datalist)
+        self.nlevels = int(np.floor(np.log2(self.size))) + 1
+        self.indices = ran
