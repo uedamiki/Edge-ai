@@ -19,4 +19,6 @@ class Heap():
 
     def BuildHeap(self):
         """
-        BuildHeap heapifies from
+        BuildHeap heapifies from the second lowest level of the heap
+        """
+        for i in reversed(range(self.nlevels - 
