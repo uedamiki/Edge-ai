@@ -21,4 +21,6 @@ class Heap():
         """
         BuildHeap heapifies from the second lowest level of the heap
         """
-        for i in reversed(range(self.nlevels - 
+        for i in reversed(range(self.nlevels - 1)):
+            for j in range(int(2**i)):
+                self.Heapify(int(2**i - 1 
