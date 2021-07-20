@@ -13,4 +13,10 @@ class Heap():
         self.data = datalist
         self.size = len(datalist)
         self.nlevels = int(np.floor(np.log2(self.size))) + 1
-        self.indices = ran
+        self.indices = range(self.size)
+        self.BuildHeap()
+
+
+    def BuildHeap(self):
+        """
+        BuildHeap heapifies from
