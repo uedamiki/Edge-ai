@@ -28,4 +28,6 @@ class Heap():
 
     def ExtractMin(self):
         if(self.size > 0):
-            self.Sw
+            self.Swap(0, self.size - 1)
+            minelement = self.data[self.indices[self.size - 1]]
+      
