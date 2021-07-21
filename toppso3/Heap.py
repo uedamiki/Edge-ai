@@ -23,4 +23,9 @@ class Heap():
         """
         for i in reversed(range(self.nlevels - 1)):
             for j in range(int(2**i)):
-                self.Heapify(int(2**i - 1 
+                self.Heapify(int(2**i - 1 + j))
+
+
+    def ExtractMin(self):
+        if(self.size > 0):
+            self.Sw
