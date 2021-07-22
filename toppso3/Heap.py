@@ -30,4 +30,7 @@ class Heap():
         if(self.size > 0):
             self.Swap(0, self.size - 1)
             minelement = self.data[self.indices[self.size - 1]]
-      
+            index = self.indices.pop()
+            self.size -= 1
+            if(self.size == 0):
+                s
