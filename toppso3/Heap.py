@@ -33,4 +33,6 @@ class Heap():
             index = self.indices.pop()
             self.size -= 1
             if(self.size == 0):
-                s
+                self.nlevels = 0
+            else:
+                self.nlevels = int(np.floor(np.lo
