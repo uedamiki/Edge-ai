@@ -35,4 +35,6 @@ class Heap():
             if(self.size == 0):
                 self.nlevels = 0
             else:
-                self.nlevels = int(np.floor(np.lo
+                self.nlevels = int(np.floor(np.log2(self.size))) + 1
+                self.Heapify(0)
+            return [index, mi
