@@ -42,4 +42,10 @@ class Heap():
             print "The heap is empty."
             
 
-    def Decrea
+    def DecreaseKey():
+        pass
+
+
+    def Heapify(self, i):
+        lc = self.LeftChild(i)
+        rc = se
