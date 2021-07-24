@@ -48,4 +48,7 @@ class Heap():
 
     def Heapify(self, i):
         lc = self.LeftChild(i)
-        rc = se
+        rc = self.RightChild(i)
+        smallest = i
+        if lc < self.size:
+          
