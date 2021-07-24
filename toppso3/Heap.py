@@ -37,4 +37,9 @@ class Heap():
             else:
                 self.nlevels = int(np.floor(np.log2(self.size))) + 1
                 self.Heapify(0)
-            return [index, mi
+            return [index, minelement]
+        else:
+            print "The heap is empty."
+            
+
+    def Decrea
