@@ -51,4 +51,5 @@ class Heap():
         rc = self.RightChild(i)
         smallest = i
         if lc < self.size:
-          
+            if self.data[self.indices[lc]] < self.data[self.indices[smallest]]:
+                smallest = lc
