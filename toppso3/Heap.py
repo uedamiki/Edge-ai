@@ -53,3 +53,5 @@ class Heap():
         if lc < self.size:
             if self.data[self.indices[lc]] < self.data[self.indices[smallest]]:
                 smallest = lc
+        if rc < self.size:
+            if self.data[self.indices[rc]] < self.data[
