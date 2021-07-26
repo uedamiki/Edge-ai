@@ -61,4 +61,9 @@ class Heap():
             self.Heapify(smallest)
     
 
-    def Parent
+    def Parent(self, i):
+        return int(i - 1)/2
+
+
+    def LeftChild(self, i):
+        return int
