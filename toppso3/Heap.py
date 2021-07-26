@@ -57,4 +57,8 @@ class Heap():
             if self.data[self.indices[rc]] < self.data[self.indices[smallest]]:
                 smallest = rc
         if smallest != i:
-          
+            self.Swap(i, smallest)            
+            self.Heapify(smallest)
+    
+
+    def Parent
