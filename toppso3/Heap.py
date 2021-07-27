@@ -66,4 +66,11 @@ class Heap():
 
 
     def LeftChild(self, i):
-        return int
+        return int(2*i) + 1
+    
+
+    def RightChild(self, i):
+        return int(2*i) + 2
+        
+
+  
