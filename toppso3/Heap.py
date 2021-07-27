@@ -73,4 +73,6 @@ class Heap():
         return int(2*i) + 2
         
 
-  
+    def Swap(self, i, j):
+        temp = self.indices[i]
+        self.indice
