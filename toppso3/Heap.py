@@ -75,4 +75,9 @@ class Heap():
 
     def Swap(self, i, j):
         temp = self.indices[i]
-        self.indice
+        self.indices[i] = self.indices[j]
+        self.indices[j] = temp
+
+
+    def PrintHeap(self):
+        size = self.
