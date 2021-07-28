@@ -80,4 +80,6 @@ class Heap():
 
 
     def PrintHeap(self):
-        size = self.
+        size = self.size
+        for i in range(self.nlevels):
+            space = 10*int(2**(self.nlevels - i
