@@ -84,4 +84,6 @@ class Heap():
         for i in range(self.nlevels):
             space = 10*int(2**(self.nlevels - i - 1)) - 1
             string = " "*space
-            for j in range(int(2
+            for j in range(int(2**i)):
+                if(size > 0):
+                    string += ''.join(str(self.
