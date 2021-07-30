@@ -86,4 +86,6 @@ class Heap():
             string = " "*space
             for j in range(int(2**i)):
                 if(size > 0):
-                    string += ''.join(str(self.
+                    string += ''.join(str(self.data[self.indices[int(2**i - 1 + j)]]) + " "*(2*space))
+                    size -= 1
+            
