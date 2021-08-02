@@ -16,4 +16,10 @@ import Heap
 
 import TOPP
 from TOPP import TOPPpy
-from TOPP
+from TOPP import Trajectory
+
+# global variables for RRTPlanners
+FW = 0
+BW = 1
+REACHED = 0
+A
