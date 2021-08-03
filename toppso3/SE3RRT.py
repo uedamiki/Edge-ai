@@ -26,4 +26,10 @@ ADVANCED = 1
 TRAPPED = 2
 
 # gobal variables for collision checking 
-INCOLLISION 
+INCOLLISION = -1
+OK = 1
+
+class Config():
+    """Attributes:
+         q   -- quaternion vector
+         
