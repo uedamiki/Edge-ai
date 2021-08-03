@@ -22,4 +22,8 @@ from TOPP import Trajectory
 FW = 0
 BW = 1
 REACHED = 0
-A
+ADVANCED = 1
+TRAPPED = 2
+
+# gobal variables for collision checking 
+INCOLLISION 
