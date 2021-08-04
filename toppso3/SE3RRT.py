@@ -35,4 +35,6 @@ class Config():
          qs  -- angular velocity
 
          qt  -- translation vector
-         qts -- translational 
+         qts -- translational velocity
+    """
+    def __init__(self, q, qt, qs = None, qts = None, qss = No
