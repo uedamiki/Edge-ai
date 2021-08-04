@@ -32,4 +32,7 @@ OK = 1
 class Config():
     """Attributes:
          q   -- quaternion vector
-         
+         qs  -- angular velocity
+
+         qt  -- translation vector
+         qts -- translational 
