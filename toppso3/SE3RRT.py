@@ -46,4 +46,9 @@ class Config():
 
         self.qt = qt
         if (qts == None):
-            
+            self.qts = zeros(3)
+        else:
+            self.qts = qts
+
+
+class Vertex():
