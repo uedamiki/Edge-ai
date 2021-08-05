@@ -37,4 +37,8 @@ class Config():
          qt  -- translation vector
          qts -- translational velocity
     """
-    def __init__(self, q, qt, qs = None, qts = None, qss = No
+    def __init__(self, q, qt, qs = None, qts = None, qss = None, qtss = None):
+        self.q = q
+        if (qs == None):
+            self.qs = zeros(3)
+        else:
