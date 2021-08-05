@@ -42,3 +42,8 @@ class Config():
         if (qs == None):
             self.qs = zeros(3)
         else:
+            self.qs = qs
+
+        self.qt = qt
+        if (qts == None):
+            
