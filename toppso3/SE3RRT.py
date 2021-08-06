@@ -52,3 +52,6 @@ class Config():
 
 
 class Vertex():
+    """Attributes:
+         config     -- stores a Config obj
+         parent     -- the
