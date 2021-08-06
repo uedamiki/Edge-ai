@@ -54,4 +54,5 @@ class Config():
 class Vertex():
     """Attributes:
          config     -- stores a Config obj
-         parent     -- the
+         parent     -- the parent for FW vertex, the child for BW vertex
+         trajstring -- a trajectory fro
