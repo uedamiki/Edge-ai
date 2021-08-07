@@ -61,4 +61,5 @@ class Vertex():
     def __init__(self, config, vertextype = FW):
         self.config = config
         self.vertextype = vertextype
-        self.parent = None # to be 
+        self.parent = None # to be assigned when added to a tree
+        self.traj = '' # to be assigned when added to a tr
