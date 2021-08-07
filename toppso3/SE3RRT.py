@@ -59,4 +59,6 @@ class Vertex():
          level      -- its level from the root of the tree (0 for the root)
     """
     def __init__(self, config, vertextype = FW):
-    
+        self.config = config
+        self.vertextype = vertextype
+        self.parent = None # to be 
