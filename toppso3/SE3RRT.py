@@ -56,4 +56,7 @@ class Vertex():
          config     -- stores a Config obj
          parent     -- the parent for FW vertex, the child for BW vertex
          trajstring -- a trajectory from its parent (or child)
-         level      -- its level from the root of th
+         level      -- its level from the root of the tree (0 for the root)
+    """
+    def __init__(self, config, vertextype = FW):
+    
