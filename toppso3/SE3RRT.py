@@ -63,4 +63,10 @@ class Vertex():
         self.vertextype = vertextype
         self.parent = None # to be assigned when added to a tree
         self.traj = '' # to be assigned when added to a tree (rot)
-        self.trajtran = '' # to be assigned when added to a tre
+        self.trajtran = '' # to be assigned when added to a tree (trans)
+        self.level = 0
+
+
+class Tree():
+    """Attributes:
+         verticeslist -
