@@ -69,4 +69,7 @@ class Vertex():
 
 class Tree():
     """Attributes:
-         verticeslist -
+         verticeslist -- stores all vertices added to the tree
+         treetype     -- FW or BW    
+    """
+ 
