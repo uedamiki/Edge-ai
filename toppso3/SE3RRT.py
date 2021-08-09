@@ -77,4 +77,9 @@ class Tree():
             self.verticeslist = []
         else:
             self.verticeslist = [vroot]
-        self.treetype = treety
+        self.treetype = treetype
+
+    def __len__(self):
+        return len(self.verticeslist)
+
+    def __getit
