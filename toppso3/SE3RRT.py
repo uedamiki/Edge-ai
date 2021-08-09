@@ -74,4 +74,7 @@ class Tree():
     """
     def __init__(self, treetype = FW, vroot = None):
         if (vroot == None):
-            self.verticeslist =
+            self.verticeslist = []
+        else:
+            self.verticeslist = [vroot]
+        self.treetype = treety
