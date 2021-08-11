@@ -89,4 +89,8 @@ class Tree():
         vnew.parent = parent
         vnew.traj = traj
         vnew.trajtran = trajtran
-        self.verticeslist.append(v
+        self.verticeslist.append(vnew)
+
+    def GenTrajList(self):
+        trajlist = []
+        if (self.treetype == FW):
