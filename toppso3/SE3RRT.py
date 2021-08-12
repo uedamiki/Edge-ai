@@ -96,3 +96,5 @@ class Tree():
         if (self.treetype == FW):
             vertex = self.verticeslist[-1]
             parent = vertex.parent
+            while (vertex.parent != None):
+                trajlist.append(
