@@ -99,4 +99,6 @@ class Tree():
             while (vertex.parent != None):
                 trajlist.append(vertex.traj)
                 vertex = parent
-                if (vertex.p
+                if (vertex.parent != None):
+                    parent = vertex.parent
+            trajlist = trajlist[::-1]
