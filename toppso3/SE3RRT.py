@@ -104,4 +104,6 @@ class Tree():
             trajlist = trajlist[::-1]
         else:
             vertex = self.verticeslist[-1]
-            while (vertex.paren
+            while (vertex.parent != None):
+                trajlist.append(vertex.traj)
+          
