@@ -102,3 +102,6 @@ class Tree():
                 if (vertex.parent != None):
                     parent = vertex.parent
             trajlist = trajlist[::-1]
+        else:
+            vertex = self.verticeslist[-1]
+            while (vertex.paren
