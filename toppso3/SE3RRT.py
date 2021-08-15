@@ -108,4 +108,8 @@ class Tree():
                 trajlist.append(vertex.traj)
                 if (vertex.parent != None):
                     vertex = vertex.parent
-        return trajl
+        return trajlist
+    
+    def GenRotationMatList(self):
+        RotationMatList = []
+        if (self.tree
