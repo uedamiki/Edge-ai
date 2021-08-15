@@ -114,4 +114,6 @@ class Tree():
         RotationMatList = []
         if (self.treetype == FW):
             vertex = self.verticeslist[-1]
-            RotationMatList.append(
+            RotationMatList.append(rotationMatrixFromQuat(vertex.config.q))
+            parent = vertex.parent
+          
