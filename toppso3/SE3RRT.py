@@ -112,4 +112,6 @@ class Tree():
     
     def GenRotationMatList(self):
         RotationMatList = []
-        if (self.tree
+        if (self.treetype == FW):
+            vertex = self.verticeslist[-1]
+            RotationMatList.append(
