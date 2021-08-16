@@ -121,4 +121,7 @@ class Tree():
                 vertex = parent
                 if (vertex.parent != None):
                     parent = vertex.parent
-            RotationMatList = 
+            RotationMatList =  RotationMatList[::-1]
+        else:
+            vertex = self.verticeslist[-1]
+  
