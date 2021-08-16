@@ -119,4 +119,6 @@ class Tree():
             while (vertex.parent != None):
                 RotationMatList.append(rotationMatrixFromQuat(parent.config.q))
                 vertex = parent
-                if (vertex.
+                if (vertex.parent != None):
+                    parent = vertex.parent
+            RotationMatList = 
