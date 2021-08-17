@@ -124,4 +124,4 @@ class Tree():
             RotationMatList =  RotationMatList[::-1]
         else:
             vertex = self.verticeslist[-1]
-  
+            RotationMatList.append(rotationMatrixFromQuat(vertex.config.q))          
