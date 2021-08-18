@@ -129,4 +129,8 @@ class Tree():
                 RotationMatList.append(rotationMatrixFromQuat(vertex.parent.config.q))
                 if (vertex.parent != None):
                     vertex = vertex.parent
-        return RotationMatLis
+        return RotationMatList
+
+    def GenTrajTranString(self):
+        trajtranlist = []
+        if (self.treetype 
