@@ -133,4 +133,7 @@ class Tree():
 
     def GenTrajTranString(self):
         trajtranlist = []
-        if (self.treetype 
+        if (self.treetype == FW):
+            vertex = self.verticeslist[-1]
+            parent = vertex.parent
+            w
