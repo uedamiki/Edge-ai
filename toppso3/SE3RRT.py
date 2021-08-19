@@ -136,4 +136,6 @@ class Tree():
         if (self.treetype == FW):
             vertex = self.verticeslist[-1]
             parent = vertex.parent
-            w
+            while (vertex.parent != None):
+                trajtranlist.append(vertex.trajtran)
+           
