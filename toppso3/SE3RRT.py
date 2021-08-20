@@ -140,4 +140,7 @@ class Tree():
                 trajtranlist.append(vertex.trajtran)
                 vertex = parent
                 if (vertex.parent != None):
-                    paren
+                    parent = vertex.parent
+            trajtranlist = trajtranlist[::-1]
+        else:
+            vertex = self.verti
