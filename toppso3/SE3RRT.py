@@ -138,4 +138,6 @@ class Tree():
             parent = vertex.parent
             while (vertex.parent != None):
                 trajtranlist.append(vertex.trajtran)
-           
+                vertex = parent
+                if (vertex.parent != None):
+                    paren
