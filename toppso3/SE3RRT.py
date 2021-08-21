@@ -143,4 +143,6 @@ class Tree():
                     parent = vertex.parent
             trajtranlist = trajtranlist[::-1]
         else:
-            vertex = self.verti
+            vertex = self.verticeslist[-1]
+            while (vertex.parent != None):
+                trajtranlist.append(vertex.trajtr
