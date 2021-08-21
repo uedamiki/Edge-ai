@@ -150,4 +150,6 @@ class Tree():
                     vertex = vertex.parent
         trajectorytranstring = ''
         for i in range(len(trajtranlist)):
-   
+            trajectorytranstring += "\n"
+            trajectorytranstring += trajtranlist[i]
+ 
