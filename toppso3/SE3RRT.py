@@ -147,4 +147,7 @@ class Tree():
             while (vertex.parent != None):
                 trajtranlist.append(vertex.trajtran)
                 if (vertex.parent != None):
-                    vertex = vertex.par
+                    vertex = vertex.parent
+        trajectorytranstring = ''
+        for i in range(len(trajtranlist)):
+   
