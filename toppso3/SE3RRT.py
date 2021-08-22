@@ -152,4 +152,4 @@ class Tree():
         for i in range(len(trajtranlist)):
             trajectorytranstring += "\n"
             trajectorytranstring += trajtranlist[i]
- 
+        trajectorytranstring = string.lstrip(trajectorytranstring) # remove leadin
