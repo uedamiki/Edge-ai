@@ -157,4 +157,9 @@ class Tree():
 
     
 class RRTPlanner():
-    """Ba
+    """Base class for RRT planners"""
+    REACHED = 0
+    ADVANCED = 1
+    TRAPPED = 2
+
+  
