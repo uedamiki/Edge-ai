@@ -165,4 +165,6 @@ class RRTPlanner():
     def __init__(self, vertex_start, vertex_goal, robot):
         """Initialize a planner. RRTPlanner always has two trees. For a unidirectional planner, 
         the treeend will not be extended and always has only one vertex, vertex_goal.        
-        """       
+        """        
+        # np.random.seed(np.random.randint(0, 10))
+        ## need more unpredictable sequence t
