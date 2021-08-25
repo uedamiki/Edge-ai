@@ -171,4 +171,6 @@ class RRTPlanner():
         self.RANDOM_NUMBER_GENERATOR = random.SystemRandom()
         
         self.treestart = Tree(FW, vertex_start)
-        self.treeend
+        self.treeend = Tree(BW, vertex_goal)
+        self.connectingtraj = []
+        self.connectingtrajtr
