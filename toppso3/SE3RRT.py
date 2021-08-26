@@ -184,4 +184,8 @@ class RRTPlanner():
         self.INTERPOLATIONDURATION = 0.5
         
         #Openrave paras
-        sel
+        self.robot = robot
+        
+        self.discrtimestep = 1e-2 ## for collision checking, etc.
+
+    def
