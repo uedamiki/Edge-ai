@@ -180,4 +180,8 @@ class RRTPlanner():
         self.result = False
         
         # DEFAULT PARAMETERS  
-        self.STEPSIZE =
+        self.STEPSIZE = 0.7
+        self.INTERPOLATIONDURATION = 0.5
+        
+        #Openrave paras
+        sel
