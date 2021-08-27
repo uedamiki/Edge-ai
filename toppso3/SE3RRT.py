@@ -188,4 +188,5 @@ class RRTPlanner():
         
         self.discrtimestep = 1e-2 ## for collision checking, etc.
 
-    def
+    def __str__(self):
+        ret = "Total running time :" + str(self.runningtime) + "sec.
