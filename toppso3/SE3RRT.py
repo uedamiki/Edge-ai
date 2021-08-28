@@ -193,4 +193,5 @@ class RRTPlanner():
         ret += "Total number of iterations :" + str(self.iterations)
         return ret
 
-    
+    def RandomConfig(self):
+        """RandomConfig samples a random configuration uniformly
