@@ -196,4 +196,7 @@ class RRTPlanner():
     def RandomConfig(self):
         """RandomConfig samples a random configuration uniformly from the quaternion unit sphere in four dimensions."""
         
-        q_rand = lie.Rando
+        q_rand = lie.RandomQuat()
+        vellowerlimit = -5 ##
+        velupperlimit = 5  ##
+        # qs
