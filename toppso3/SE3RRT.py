@@ -202,4 +202,4 @@ class RRTPlanner():
         # qs_rand = np.zeros(3)
         qs_rand = np.array([1e-1,1e-1,1e-1])
         # for i in range(3):
-  
+        #    qs_rand[i] = self.RANDOM_NUMBER_GENERATOR.uniform(vellowerlimit,velup
