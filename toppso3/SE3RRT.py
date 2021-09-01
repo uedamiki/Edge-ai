@@ -205,4 +205,9 @@ class RRTPlanner():
         #    qs_rand[i] = self.RANDOM_NUMBER_GENERATOR.uniform(vellowerlimit,velupperlimit) 
         
         qt_rand = 0.05*np.random.rand(3) 
-        qts_rand = np.z
+        qts_rand = np.zeros(3)
+
+        return Config(q_rand,qt_rand, qs_rand, qts_rand)
+
+    def Extend(self, c_rand):
+    
