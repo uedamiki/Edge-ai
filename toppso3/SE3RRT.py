@@ -199,4 +199,7 @@ class RRTPlanner():
         q_rand = lie.RandomQuat()
         vellowerlimit = -5 ##
         velupperlimit = 5  ##
-        # qs
+        # qs_rand = np.zeros(3)
+        qs_rand = np.array([1e-1,1e-1,1e-1])
+        # for i in range(3):
+  
