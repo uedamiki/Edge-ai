@@ -210,4 +210,5 @@ class RRTPlanner():
         return Config(q_rand,qt_rand, qs_rand, qts_rand)
 
     def Extend(self, c_rand):
-    
+        if (np.mod(self.iterations - 1, 2) == FW):
+            ## treestart is to be e
