@@ -214,4 +214,8 @@ class RRTPlanner():
             ## treestart is to be extended
             res = self.ExtendFW(c_rand)
         else:
-            ## treeend is to be e
+            ## treeend is to be extended
+            res = self.ExtendBW(c_rand)
+        return res
+
+    def Ext
