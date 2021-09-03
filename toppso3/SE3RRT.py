@@ -218,4 +218,6 @@ class RRTPlanner():
             res = self.ExtendBW(c_rand)
         return res
 
-    def Ext
+    def ExtendFW(self, c_rand):
+        nnindices = self.NearestNeighborIndices(c_rand, FW)
+        for ind
