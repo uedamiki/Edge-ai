@@ -222,4 +222,6 @@ class RRTPlanner():
         nnindices = self.NearestNeighborIndices(c_rand, FW)
         for index in nnindices:
             v_near = self.treestart.verticeslist[index]
-         
+            q_beg = v_near.config.q
+            qs_beg = v_near.config.qs
+       
