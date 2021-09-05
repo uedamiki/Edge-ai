@@ -220,4 +220,6 @@ class RRTPlanner():
 
     def ExtendFW(self, c_rand):
         nnindices = self.NearestNeighborIndices(c_rand, FW)
-        for ind
+        for index in nnindices:
+            v_near = self.treestart.verticeslist[index]
+         
