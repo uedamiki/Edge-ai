@@ -224,4 +224,6 @@ class RRTPlanner():
             v_near = self.treestart.verticeslist[index]
             q_beg = v_near.config.q
             qs_beg = v_near.config.qs
-       
+            
+            qt_beg = v_near.config.qt
+            qts_beg = v_near.config.qt
