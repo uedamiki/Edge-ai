@@ -226,4 +226,7 @@ class RRTPlanner():
             qs_beg = v_near.config.qs
             
             qt_beg = v_near.config.qt
-            qts_beg = v_near.config.qt
+            qts_beg = v_near.config.qts
+
+            ## check if c_rand is too far from vnear
+            ## if the new ramdonly-c
