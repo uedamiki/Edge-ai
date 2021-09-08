@@ -229,4 +229,5 @@ class RRTPlanner():
             qts_beg = v_near.config.qts
 
             ## check if c_rand is too far from vnear
-            ## if the new ramdonly-chose node is close, it's safer . Or in another words, the interpolated path will have more chances
+            ## if the new ramdonly-chose node is close, it's safer . Or in another words, the interpolated path will have more chances that it won't collide with the obstacles
+            delta = self.Distance(v_near.config, c_r
