@@ -242,4 +242,7 @@ class RRTPlanner():
 
             qt_end = c_rand.qt
             qts_end = c_rand.qts
-            c_new = Config
+            c_new = Config(q_end, qt_end, qs_end, qts_end)
+
+            ## check feasibility of c_new
+            if (not
