@@ -250,4 +250,5 @@ class RRTPlanner():
                 STATUS = TRAPPED
                 continue            
             
-            #
+            ## interpolate a trajectory
+            #trajectory = lie.InterpolateSO3ZeroOmega(rotationM
