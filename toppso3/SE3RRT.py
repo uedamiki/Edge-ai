@@ -260,4 +260,5 @@ class RRTPlanner():
                   ## extension is now successful
                 v_new = Vertex(c_new, FW)
                 v_new.level = v_near.level + 1
-                self.tr
+                self.treestart.AddVertex(v_near, trajectory, trajectorytranstring, v_new)
+                ret
