@@ -258,4 +258,6 @@ class RRTPlanner():
             result = self.IsFeasibleTrajectory(trajectory, trajectorytranstring, q_beg, qt_beg, FW) 
             if (result[0] == OK):
                   ## extension is now successful
-     
+                v_new = Vertex(c_new, FW)
+                v_new.level = v_near.level + 1
+                self.tr
