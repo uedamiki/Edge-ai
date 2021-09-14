@@ -266,4 +266,5 @@ class RRTPlanner():
                 STATUS = TRAPPED  #trajecory doesnt satify the collision-free constraint
         return STATUS
 
-    d
+    def ExtendBW(self, c_rand):
+        # Implement NearestneiborIndices return the 
