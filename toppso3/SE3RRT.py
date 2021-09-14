@@ -267,4 +267,5 @@ class RRTPlanner():
         return STATUS
 
     def ExtendBW(self, c_rand):
-        # Implement NearestneiborIndices return the 
+        # Implement NearestneiborIndices return the list of nodes in order of increasing distance
+        nnindices = self.NearestNeighborIn
