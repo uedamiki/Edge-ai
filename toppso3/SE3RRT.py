@@ -276,4 +276,5 @@ class RRTPlanner():
 
             qt_end = v_near.config.qt
             qts_end = v_near.config.qts
-            ## check if
+            ## check if c_rand is too far from vnear
+            ## if the new ramdonly-chose node is clos
