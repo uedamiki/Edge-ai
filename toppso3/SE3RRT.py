@@ -284,4 +284,8 @@ class RRTPlanner():
                 STATUS = REACHED
             else:
                 q_beg = q_end + self.STEPSIZE*(c_rand.q - q_end)/np.sqrt(delta)
-                q_beg /= np.lina
+                q_beg /= np.linalg.norm(q_beg)
+                STATUS = ADVANCED
+            qs_beg = c_rand.qs
+
+          
