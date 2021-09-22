@@ -288,4 +288,6 @@ class RRTPlanner():
                 STATUS = ADVANCED
             qs_beg = c_rand.qs
 
-          
+            qt_beg = c_rand.qt
+            qts_beg = c_rand.qts
+            c_new = Config(q_
