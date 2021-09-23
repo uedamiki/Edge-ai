@@ -296,4 +296,7 @@ class RRTPlanner():
             if (not self.IsFeasibleConfig(c_new)): ####################?????????
                 # print "status : TRAPPED (infeasible configuration)"
                 STATUS = TRAPPED
- 
+                continue            
+
+            ## interpolate a trajectory
+            # traject
