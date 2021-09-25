@@ -303,4 +303,5 @@ class RRTPlanner():
             trajectory = lie.InterpolateSO3(rotationMatrixFromQuat(q_beg),rotationMatrixFromQuat(q_end),qs_beg,qs_end,self.INTERPOLATIONDURATION)
 
             trajectorytranstring = Utils.TrajString3rdDegree(qt_beg, qt_end, qts_beg, qts_end, self.INTERPOLATIONDURATION)
-            ## check feasibility ( collision checking for the trajec
+            ## check feasibility ( collision checking for the trajectory)
+            result = self.IsFeasibleTrajectory(trajectory, trajectorytranstring, q_beg, qt_beg, 
