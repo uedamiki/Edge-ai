@@ -310,3 +310,6 @@ class RRTPlanner():
                 v_new = Vertex(c_new, BW)
                 v_new.level = v_near.level + 1
                 self.treeend.AddVertex(v_near, trajectory,trajectorytranstring, v_new)
+                return STATUS
+            else:
+                STATUS = TRAPPED  #trajecory doesn
