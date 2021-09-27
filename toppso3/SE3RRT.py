@@ -319,4 +319,7 @@ class RRTPlanner():
     def Connect(self):
         if (np.mod(self.iterations - 1, 2) == FW):
             ## treestart has just been extended
-            res = sel
+            res = self.ConnectBW()
+        else:
+            ## treeend has just been extended
+            res = s
