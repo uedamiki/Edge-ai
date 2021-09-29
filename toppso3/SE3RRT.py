@@ -322,4 +322,8 @@ class RRTPlanner():
             res = self.ConnectBW()
         else:
             ## treeend has just been extended
-            res = s
+            res = self.ConnectFW()
+        return res
+        
+    def ConnectFW(self):
+        v_test = self.
