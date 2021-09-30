@@ -329,4 +329,7 @@ class RRTPlanner():
         v_test = self.treeend.verticeslist[-1]
         nnindices = self.NearestNeighborIndices(v_test.config, FW)
         for index in nnindices:
-            v_near = self.treestart.vertic
+            v_near = self.treestart.verticeslist[index]
+            
+            q_beg = v_near.config.q
+            qs_beg = v_near.config.qs
