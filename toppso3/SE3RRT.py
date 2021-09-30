@@ -327,4 +327,6 @@ class RRTPlanner():
         
     def ConnectFW(self):
         v_test = self.treeend.verticeslist[-1]
-        nnindices = self.NearestNeighborIndices(v_test.
+        nnindices = self.NearestNeighborIndices(v_test.config, FW)
+        for index in nnindices:
+            v_near = self.treestart.vertic
