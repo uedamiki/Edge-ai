@@ -326,4 +326,5 @@ class RRTPlanner():
         return res
         
     def ConnectFW(self):
-        v_test = self.
+        v_test = self.treeend.verticeslist[-1]
+        nnindices = self.NearestNeighborIndices(v_test.
