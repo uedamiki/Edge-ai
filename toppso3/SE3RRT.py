@@ -339,4 +339,7 @@ class RRTPlanner():
 
             q_end = v_test.config.q
             qs_end = v_test.config.qs
-            qt_end = v_test.conf
+            qt_end = v_test.config.qt
+            qts_end = v_test.config.qts
+             ## interpolate a trajectory
+            #trajecto
