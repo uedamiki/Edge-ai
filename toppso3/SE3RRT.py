@@ -348,4 +348,6 @@ class RRTPlanner():
             
              ## check feasibility ( collision checking for the trajectory)
             result = self.IsFeasibleTrajectory(trajectory, trajectorytranstring, q_beg, qt_beg, FW)
-            if 
+            if (result[0] == 1):
+                 ## conection is now successful
+                self.tr
