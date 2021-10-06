@@ -347,4 +347,5 @@ class RRTPlanner():
             trajectorytranstring = Utils.TrajString3rdDegree(qt_beg, qt_end, qts_beg, qts_end, self.INTERPOLATIONDURATION)
             
              ## check feasibility ( collision checking for the trajectory)
-            result = self.Is
+            result = self.IsFeasibleTrajectory(trajectory, trajectorytranstring, q_beg, qt_beg, FW)
+            if 
