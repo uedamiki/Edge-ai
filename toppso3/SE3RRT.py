@@ -362,4 +362,7 @@ class RRTPlanner():
         for index in nnindices:
             v_near = self.treeend.verticeslist[index]
             
-            q_end = v_near
+            q_end = v_near.config.q
+            qs_end = v_near.config.qs
+            qt_end = v_near.config.qt
+     
