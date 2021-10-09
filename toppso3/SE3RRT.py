@@ -354,4 +354,7 @@ class RRTPlanner():
                 self.connectingtraj = trajectory
                 self.connectingtrajtran = trajectorytranstring
                 return REACHED
- 
+        return TRAPPED
+
+    def ConnectBW(self):
+        v_test = self.treestart.verticesli
