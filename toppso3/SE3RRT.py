@@ -359,4 +359,7 @@ class RRTPlanner():
     def ConnectBW(self):
         v_test = self.treestart.verticeslist[-1]
         nnindices = self.NearestNeighborIndices(v_test.config, BW)
-        for index in 
+        for index in nnindices:
+            v_near = self.treeend.verticeslist[index]
+            
+            q_end = v_near
