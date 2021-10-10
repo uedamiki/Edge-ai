@@ -368,4 +368,8 @@ class RRTPlanner():
             qts_end = v_near.config.qts
 
             q_beg = v_test.config.q
-            qs_beg = v_
+            qs_beg = v_test.config.qs
+            qt_beg = v_test.config.qt
+            qts_beg = v_test.config.qts
+
+           
