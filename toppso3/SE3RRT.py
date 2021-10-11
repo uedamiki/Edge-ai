@@ -374,4 +374,5 @@ class RRTPlanner():
 
             ## interpolate a trajectory
             #trajectory = lie.InterpolateSO3ZeroOmega(rotationMatrixFromQuat(q_beg),rotationMatrixFromQuat(q_end),self.INTERPOLATIONDURATION)
-            trajectory = lie.InterpolateSO3(rotationMatrixFromQuat(q_beg),rotationMatrixFrom
+            trajectory = lie.InterpolateSO3(rotationMatrixFromQuat(q_beg),rotationMatrixFromQuat(q_end),qs_beg,qs_end,self.INTERPOLATIONDURATION)
+            trajectorytranstring = Utils.TrajString3rdDegr
