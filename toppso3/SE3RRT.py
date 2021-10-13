@@ -387,4 +387,5 @@ class RRTPlanner():
         return TRAPPED
 
     def IsFeasibleConfig(self, c_rand):
-        """IsFeasibleConfig checks feasibilit
+        """IsFeasibleConfig checks feasibility of the given Config object. 
+        Feasibility conditions are to be determined 
