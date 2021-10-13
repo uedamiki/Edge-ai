@@ -384,4 +384,7 @@ class RRTPlanner():
                 self.connectingtraj = trajectory
                 self.connectingtrajtran = trajectorytranstring
                 return REACHED
-        return TR
+        return TRAPPED
+
+    def IsFeasibleConfig(self, c_rand):
+        """IsFeasibleConfig checks feasibilit
