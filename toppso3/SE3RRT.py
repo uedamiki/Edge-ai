@@ -395,4 +395,5 @@ class RRTPlanner():
             transformation = eye(4)
             transformation[0:3,0:3] = rotationMatrixFromQuat(c_rand.q)
             transformation[0:3,3] = c_rand.qt
-            self.robot.SetTransform(t
+            self.robot.SetTransform(transformation)
+            isincollision = (env.CheckCollision(self.robot,
