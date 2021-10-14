@@ -392,4 +392,5 @@ class RRTPlanner():
         """
         env = self.robot.GetEnv()
         with self.robot:
-   
+            transformation = eye(4)
+            transformation[0:3,0:3] = rotationMatrixFromQuat
