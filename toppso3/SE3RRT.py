@@ -388,4 +388,8 @@ class RRTPlanner():
 
     def IsFeasibleConfig(self, c_rand):
         """IsFeasibleConfig checks feasibility of the given Config object. 
-        Feasibility conditions are to be determined 
+        Feasibility conditions are to be determined by each RRT planner.
+        """
+        env = self.robot.GetEnv()
+        with self.robot:
+   
