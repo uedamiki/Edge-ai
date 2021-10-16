@@ -398,4 +398,10 @@ class RRTPlanner():
             self.robot.SetTransform(transformation)
             isincollision = (env.CheckCollision(self.robot, CollisionReport()))
             if (isincollision):
-                # print 
+                # print "\t in-collision"
+                return False
+            else:
+                return True
+
+
+   
