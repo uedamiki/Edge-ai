@@ -404,4 +404,4 @@ class RRTPlanner():
                 return True
 
 
-   
+    def IsFeasibleTrajectory(self, trajectory, trajectorytranstring, q_beg, qt_beg, direction):
