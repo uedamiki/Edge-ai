@@ -405,3 +405,5 @@ class RRTPlanner():
 
 
     def IsFeasibleTrajectory(self, trajectory, trajectorytranstring, q_beg, qt_beg, direction):
+        """IsFeasibleTrajectory checks feasibility of the given trajectory.
+ 
