@@ -409,4 +409,5 @@ class RRTPlanner():
         Feasibility conditions are to be determined by each RRT planner.
         """
         ## check collision
-  
+        env = self.robot.GetEnv()
+        #traj = Trajectory.PiecewisePolynomialTrajectory.FromString(t
