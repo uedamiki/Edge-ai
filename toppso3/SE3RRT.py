@@ -413,4 +413,5 @@ class RRTPlanner():
         #traj = Trajectory.PiecewisePolynomialTrajectory.FromString(trajectory)
         traj = trajectory
         R_beg =  rotationMatrixFromQuat(q_beg)
- 
+        trajtran = Trajectory.PiecewisePolynomialTrajectory.FromString(trajectorytranstring)
+        for
