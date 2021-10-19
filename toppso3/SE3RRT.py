@@ -414,4 +414,6 @@ class RRTPlanner():
         traj = trajectory
         R_beg =  rotationMatrixFromQuat(q_beg)
         trajtran = Trajectory.PiecewisePolynomialTrajectory.FromString(trajectorytranstring)
-        for
+        for s in np.arange(0, traj.duration, self.discrtimestep):
+            with self.robot:
+         
