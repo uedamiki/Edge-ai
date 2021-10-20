@@ -421,4 +421,6 @@ class RRTPlanner():
                 transformation[0:3,3] = trajtran.Eval(s)
  
                 self.robot.SetTransform(transformation)
-                isincollision = (env.CheckCollision(self.robo
+                isincollision = (env.CheckCollision(self.robot, CollisionReport()))
+                # print  "s =", s, " ", isincollision
+      
