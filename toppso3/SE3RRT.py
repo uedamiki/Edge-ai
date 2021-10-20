@@ -420,4 +420,5 @@ class RRTPlanner():
                 transformation[0:3,0:3] = lie.EvalRotation(R_beg, traj, s)
                 transformation[0:3,3] = trajtran.Eval(s)
  
-                self.robot.S
+                self.robot.SetTransform(transformation)
+                isincollision = (env.CheckCollision(self.robo
