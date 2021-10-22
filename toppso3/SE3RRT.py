@@ -432,4 +432,7 @@ class RRTPlanner():
         if (isincollision):
             return [INCOLLISION]
         else:
-  
+            if (direction == FW):
+                return [OK]
+            else:
+ 
