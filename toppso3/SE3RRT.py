@@ -435,4 +435,9 @@ class RRTPlanner():
             if (direction == FW):
                 return [OK]
             else:
- 
+                return [OK]
+
+
+    def Run(self, allottedtime):
+        if (self.result):
+     
