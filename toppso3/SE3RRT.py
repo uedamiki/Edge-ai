@@ -447,4 +447,5 @@ class RRTPlanner():
         prev_it = self.iterations
 
         while (t < allottedtime):
-   
+            self.iterations += 1
+            # print "\033[1;34miteration:", self.it
