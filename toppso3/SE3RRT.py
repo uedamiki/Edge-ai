@@ -443,4 +443,8 @@ class RRTPlanner():
             print "The planner has already found a path."
             return True
 
-  
+        t = 0.0
+        prev_it = self.iterations
+
+        while (t < allottedtime):
+   
