@@ -448,4 +448,7 @@ class RRTPlanner():
 
         while (t < allottedtime):
             self.iterations += 1
-            # print "\033[1;34miteration:", self.it
+            # print "\033[1;34miteration:", self.iterations, "\033[0m"
+            t_begin = time.time()
+            
+            c_rand = self
