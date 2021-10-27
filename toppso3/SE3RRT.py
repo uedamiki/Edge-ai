@@ -460,4 +460,5 @@ class RRTPlanner():
                     print "    Total number of iterations:", self.iterations
                     t_end = time.time()
                     t += t_end - t_begin
-                    self.runni
+                    self.runningtime += t
+                    print "    Total running time:", self.runningtime, "sec.", "\0
