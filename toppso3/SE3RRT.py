@@ -466,4 +466,5 @@ class RRTPlanner():
                     return True
             t_end = time.time()
             t += t_end - t_begin
-            self.runningtime +
+            self.runningtime += t_end - t_begin
+        print "\033[1;31mAllotted time (", allottedtime, " sec.) is exhausted 
