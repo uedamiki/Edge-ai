@@ -472,4 +472,8 @@ class RRTPlanner():
 
 
     def Distance(self, c_test0, c_test1):
-        """Distance measures distance between 2 configs, ctest0 and cte
+        """Distance measures distance between 2 configs, ctest0 and ctest1
+        """
+        X0 = eye(4)
+        X1 = eye(4)
+        X0[:3,:3] = rotationMatrixFromQuat(c_tes
