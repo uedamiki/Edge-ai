@@ -471,4 +471,5 @@ class RRTPlanner():
         return False
 
 
-    def Distanc
+    def Distance(self, c_test0, c_test1):
+        """Distance measures distance between 2 configs, ctest0 and cte
