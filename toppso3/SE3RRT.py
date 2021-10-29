@@ -479,3 +479,7 @@ class RRTPlanner():
         X0[:3,:3] = rotationMatrixFromQuat(c_test0.q)
         X0[:3,3] = c_test0.qt
         X1[:3,:3] = rotationMatrixFromQuat(c_test1.q)
+        X1[:3,3] = c_test1.qt
+        return Utils.SE3Distance(X0, X1,1/pi, 1)
+
+  
