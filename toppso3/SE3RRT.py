@@ -476,4 +476,6 @@ class RRTPlanner():
         """
         X0 = eye(4)
         X1 = eye(4)
-        X0[:3,:3] = rotationMatrixFromQuat(c_tes
+        X0[:3,:3] = rotationMatrixFromQuat(c_test0.q)
+        X0[:3,3] = c_test0.qt
+        X1[:3,:3] = rotationMatrixFromQuat(c_test1.q)
