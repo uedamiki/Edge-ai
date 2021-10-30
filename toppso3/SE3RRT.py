@@ -482,4 +482,6 @@ class RRTPlanner():
         X1[:3,3] = c_test1.qt
         return Utils.SE3Distance(X0, X1,1/pi, 1)
 
-  
+        
+    def NearestNeighborIndices(self, c_rand, treetype, custom_nn = 0):
+        ""
