@@ -485,4 +485,7 @@ class RRTPlanner():
         
     def NearestNeighborIndices(self, c_rand, treetype, custom_nn = 0):
         """NearestNeighborIndices returns indices of self.nn nearest neighbors of c_rand 
-        on th
+        on the tree specified by treetype.
+        """
+        if (treetype == FW):
+            tree = self.treestar
