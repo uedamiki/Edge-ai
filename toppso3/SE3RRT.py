@@ -488,4 +488,8 @@ class RRTPlanner():
         on the tree specified by treetype.
         """
         if (treetype == FW):
-            tree = self.treestar
+            tree = self.treestart
+            nv = len(tree)
+        else:
+            tree = self.treeend
+            nv = len(
