@@ -496,4 +496,8 @@ class RRTPlanner():
             
         distancelist = [self.Distance(c_rand, v.config) for v in tree.verticeslist]
         distanceheap = Heap.Heap(distancelist)
-     
+        
+        if (custom_nn == 0):
+            nn = self.nn
+        else:
+    
