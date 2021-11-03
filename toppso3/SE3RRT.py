@@ -507,4 +507,9 @@ class RRTPlanner():
         else:
             nn = min(self.nn, nv)
         nnindices = [distanceheap.ExtractMin()[0] for i in range(nn)]
-        return nnind
+        return nnindices
+
+
+    def GenFinalTrajList(self):
+        if (not self.result):
+            print "The Plan
