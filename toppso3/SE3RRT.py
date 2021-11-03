@@ -506,4 +506,5 @@ class RRTPlanner():
             nn = nv
         else:
             nn = min(self.nn, nv)
-        nn
+        nnindices = [distanceheap.ExtractMin()[0] for i in range(nn)]
+        return nnind
