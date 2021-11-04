@@ -516,4 +516,5 @@ class RRTPlanner():
             return []
         TrajectoryList = []
         TrajectoryList = self.treestart.GenTrajList()
-        if (sel
+        if (self.connectingtraj != []):
+            TrajectoryList.append(self.connectingtraj)
