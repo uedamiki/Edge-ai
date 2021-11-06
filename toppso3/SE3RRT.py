@@ -524,4 +524,6 @@ class RRTPlanner():
         return TrajectoryList
 
     
-    def GenF
+    def GenFinalRotationMatrixList(self):
+        if (not self.result):
+            print "The Plan
