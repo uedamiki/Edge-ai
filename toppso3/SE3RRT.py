@@ -529,4 +529,6 @@ class RRTPlanner():
             print "The Planner did not find any path from start to goal."
             return []
         
-        RotationMa
+        RotationMatrixList = []
+        RotationMatrixList = self.treestart.GenRotationMatList()
+        if (self.treeend.GenR
