@@ -535,4 +535,8 @@ class RRTPlanner():
             RotationMatrixList.extend(self.treeend.GenRotationMatList())
         RotationMatrixList.pop()
         #print len(RotationMatrixList)
-        return Ro
+        return RotationMatrixList
+
+    def GenFinalTrajTranString(self):
+        if (not self.result):
+            
