@@ -541,4 +541,6 @@ class RRTPlanner():
         if (not self.result):
             print "The Planner did not find any path from start to goal."
             return ''
-   
+        
+        trajectorytranstring = ''
+        trajectorytranstring += self.treestar
