@@ -539,4 +539,6 @@ class RRTPlanner():
 
     def GenFinalTrajTranString(self):
         if (not self.result):
-            
+            print "The Planner did not find any path from start to goal."
+            return ''
+   
