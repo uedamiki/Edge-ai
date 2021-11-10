@@ -546,4 +546,6 @@ class RRTPlanner():
         trajectorytranstring += self.treestart.GenTrajTranString()
         if not (self.connectingtrajtran == ''):
             if not (trajectorytranstring == ''):
-                trajectorytranstring += 
+                trajectorytranstring += "\n"
+            trajectorytranstring += self.connectingtrajtran
+        trajtranstring_treeend =
