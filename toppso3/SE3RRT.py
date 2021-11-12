@@ -550,4 +550,6 @@ class RRTPlanner():
             trajectorytranstring += self.connectingtrajtran
         trajtranstring_treeend = self.treeend.GenTrajTranString()
         if (not trajtranstring_treeend == ''):
-            traje
+            trajectorytranstring += "\n"
+            trajectorytranstring += trajtranstring_treeend
+  
