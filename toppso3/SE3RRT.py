@@ -552,4 +552,5 @@ class RRTPlanner():
         if (not trajtranstring_treeend == ''):
             trajectorytranstring += "\n"
             trajectorytranstring += trajtranstring_treeend
-  
+        
+        return trajectorytranstring
