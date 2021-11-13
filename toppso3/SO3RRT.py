@@ -17,3 +17,14 @@ import Heap
 import TOPP
 from TOPP import TOPPpy
 from TOPP import Trajectory
+
+
+
+# global variables for RRTPlanners
+FW = 0
+BW = 1
+REACHED = 0
+ADVANCED = 1
+TRAPPED = 2
+
+# gobal vari
