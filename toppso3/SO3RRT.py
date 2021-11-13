@@ -9,4 +9,11 @@ import copy
 import random
 import os
 
-import l
+import lie
+
+import Utils
+import Heap
+
+import TOPP
+from TOPP import TOPPpy
+from TOPP import Trajectory
