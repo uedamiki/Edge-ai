@@ -32,4 +32,9 @@ INCOLLISION = -1
 OK = 1
 
 # def vectfromquat
-# def eul
+# def eulerfromquat
+# def quatfromuler
+# def quatfromvect
+
+class Config():
+    """Attribut
