@@ -37,4 +37,8 @@ OK = 1
 # def quatfromvect
 
 class Config():
-    """Attribut
+    """Attributes:
+         q   -- quaternion vector
+         qs  -- angular velocity
+    """
+    def 
