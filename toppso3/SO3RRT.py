@@ -27,4 +27,9 @@ REACHED = 0
 ADVANCED = 1
 TRAPPED = 2
 
-# gobal vari
+# gobal variables for collision checking 
+INCOLLISION = -1
+OK = 1
+
+# def vectfromquat
+# def eul
