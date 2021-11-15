@@ -43,4 +43,7 @@ class Config():
     """
     def __init__(self, q, qs = None, qss = None):
         self.q = q
-        if (qs == N
+        if (qs == None):
+            self.qs = zeros(3)
+        else:
+            self.qs
