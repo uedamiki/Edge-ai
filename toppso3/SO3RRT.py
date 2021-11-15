@@ -41,4 +41,6 @@ class Config():
          q   -- quaternion vector
          qs  -- angular velocity
     """
-    def 
+    def __init__(self, q, qs = None, qss = None):
+        self.q = q
+        if (qs == N
