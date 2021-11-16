@@ -53,4 +53,5 @@ class Vertex():
     """Attributes:
          config     -- stores a Config obj
          parent     -- the parent for FW vertex, the child for BW vertex
-    
+         trajstring -- a trajectory from its parent (or child)
+         # sdmin      -- minimum rea
