@@ -46,4 +46,9 @@ class Config():
         if (qs == None):
             self.qs = zeros(3)
         else:
-            self.qs
+            self.qs = qs
+
+
+class Vertex():
+    """Attributes:
+         config     -- s
