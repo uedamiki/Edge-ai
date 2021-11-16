@@ -54,4 +54,6 @@ class Vertex():
          config     -- stores a Config obj
          parent     -- the parent for FW vertex, the child for BW vertex
          trajstring -- a trajectory from its parent (or child)
-         # sdmin      -- minimum rea
+         # sdmin      -- minimum reachable sd
+         # sdmax      -- maximum reachable sd
+         level      -- its level f
