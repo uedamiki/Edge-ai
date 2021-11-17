@@ -56,4 +56,5 @@ class Vertex():
          trajstring -- a trajectory from its parent (or child)
          # sdmin      -- minimum reachable sd
          # sdmax      -- maximum reachable sd
-         level      -- its level f
+         level      -- its level from the root of the tree (0 for the root)
+         # drawn      -- True if 
