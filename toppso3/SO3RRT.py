@@ -57,4 +57,6 @@ class Vertex():
          # sdmin      -- minimum reachable sd
          # sdmax      -- maximum reachable sd
          level      -- its level from the root of the tree (0 for the root)
-         # drawn      -- True if 
+         # drawn      -- True if this vertex has been plotted via Vertex::Plot
+    """
+    def __init__(self, config, ve
