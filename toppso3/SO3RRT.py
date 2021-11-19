@@ -59,4 +59,7 @@ class Vertex():
          level      -- its level from the root of the tree (0 for the root)
          # drawn      -- True if this vertex has been plotted via Vertex::Plot
     """
-    def __init__(self, config, ve
+    def __init__(self, config, vertextype = FW):
+        self.config = config
+        self.vertextype = vertextype
+      
