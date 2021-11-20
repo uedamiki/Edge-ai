@@ -63,4 +63,6 @@ class Vertex():
         self.config = config
         self.vertextype = vertextype
         self.parent = None # to be assigned when added to a tree
-        self.traj = '' 
+        self.traj = '' # to be assigned when added to a tree
+        self.level = 0
+        # self.drawn 
