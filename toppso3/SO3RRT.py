@@ -65,4 +65,9 @@ class Vertex():
         self.parent = None # to be assigned when added to a tree
         self.traj = '' # to be assigned when added to a tree
         self.level = 0
-        # self.drawn 
+        # self.drawn = False 
+
+
+class Tree():
+    """Attributes:
+         verticeslist -- stores all vertices added to the
