@@ -73,4 +73,7 @@ class Tree():
          verticeslist -- stores all vertices added to the tree
          treetype     -- FW or BW    
     """
-    def __init__(self, treetype = FW, vroot = 
+    def __init__(self, treetype = FW, vroot = None):
+        if (vroot == None):
+            self.verticeslist = []
+    
