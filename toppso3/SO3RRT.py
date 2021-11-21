@@ -70,4 +70,7 @@ class Vertex():
 
 class Tree():
     """Attributes:
-         verticeslist -- stores all vertices added to the
+         verticeslist -- stores all vertices added to the tree
+         treetype     -- FW or BW    
+    """
+    def __init__(self, treetype = FW, vroot = 
