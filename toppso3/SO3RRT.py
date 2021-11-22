@@ -80,4 +80,7 @@ class Tree():
             self.verticeslist = [vroot]
         self.treetype = treetype
 
-    
+    def __len__(self):
+        return len(self.verticeslist)
+
+    def __getitem__(self, index):
