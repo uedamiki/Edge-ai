@@ -86,4 +86,7 @@ class Tree():
     def __getitem__(self, index):
         return self.verticeslist[index]        
                     
-    def Add
+    def AddVertex(self, parent, traj, vnew):
+        vnew.parent = parent
+        vnew.traj = traj
+     
