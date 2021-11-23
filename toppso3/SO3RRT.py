@@ -84,3 +84,6 @@ class Tree():
         return len(self.verticeslist)
 
     def __getitem__(self, index):
+        return self.verticeslist[index]        
+                    
+    def Add
