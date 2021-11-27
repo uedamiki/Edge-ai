@@ -93,4 +93,6 @@ class Tree():
 
     def GenTrajList(self):
         trajlist = []
- 
+        if (self.treetype == FW):
+            vertex = self.verticeslist[-1]
+            parent = vertex
