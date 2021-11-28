@@ -100,4 +100,7 @@ class Tree():
                 trajlist.append(vertex.traj)
                 vertex = parent
                 if (vertex.parent != None):
-                    par
+                    parent = vertex.parent
+            trajlist = trajlist[::-1]
+        else:
+         
