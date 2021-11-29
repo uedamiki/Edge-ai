@@ -107,4 +107,7 @@ class Tree():
             while (vertex.parent != None):
                 trajlist.append(vertex.traj)
                 if (vertex.parent != None):
-                   
+                    vertex = vertex.parent
+        return trajlist
+    
+    def GenRotationMatL
