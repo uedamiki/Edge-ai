@@ -103,4 +103,6 @@ class Tree():
                     parent = vertex.parent
             trajlist = trajlist[::-1]
         else:
-         
+            vertex = self.verticeslist[-1]
+            while (vertex.parent != None):
+        
