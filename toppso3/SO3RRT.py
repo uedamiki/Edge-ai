@@ -110,4 +110,7 @@ class Tree():
                     vertex = vertex.parent
         return trajlist
     
-    def GenRotationMatL
+    def GenRotationMatList(self):
+        RotationMatList = []
+        if (self.treetype == FW):
+            ve
