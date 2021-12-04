@@ -129,4 +129,10 @@ class Tree():
                 RotationMatList.append(rotationMatrixFromQuat(vertex.parent.config.q))
                 if (vertex.parent != None):
                     vertex = vertex.parent
-        return Rot
+        return RotationMatList
+
+
+class RRTPlanner():
+    """Base class for RRT planners"""
+    REACHED = 0
+    A
