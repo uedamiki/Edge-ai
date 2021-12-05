@@ -138,4 +138,5 @@ class RRTPlanner():
     ADVANCED = 1
     TRAPPED = 2
 
-    def __init__(self, vertex_start, vertex_goal, robot
+    def __init__(self, vertex_start, vertex_goal, robot):
+        """Initialize a planner. RRTPlanner always has two trees. For a unidirectional planne
