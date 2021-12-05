@@ -135,4 +135,7 @@ class Tree():
 class RRTPlanner():
     """Base class for RRT planners"""
     REACHED = 0
-    A
+    ADVANCED = 1
+    TRAPPED = 2
+
+    def __init__(self, vertex_start, vertex_goal, robot
