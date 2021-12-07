@@ -143,4 +143,5 @@ class RRTPlanner():
         the treeend will not be extended and always has only one vertex, vertex_goal.        
         """        
         # np.random.seed(np.random.randint(0, 10))
-        ## 
+        ## need more unpredictable sequence than that generated from np.random
+    
