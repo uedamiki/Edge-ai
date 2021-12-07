@@ -146,4 +146,6 @@ class RRTPlanner():
         ## need more unpredictable sequence than that generated from np.random
         self.RANDOM_NUMBER_GENERATOR = random.SystemRandom()
         
-        self.treesta
+        self.treestart = Tree(FW, vertex_start)
+        self.treeend = Tree(BW, vertex_goal)
+        s
