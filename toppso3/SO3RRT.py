@@ -148,4 +148,7 @@ class RRTPlanner():
         
         self.treestart = Tree(FW, vertex_start)
         self.treeend = Tree(BW, vertex_goal)
-        s
+        self.connectingtraj = []
+        self.runningtime = 0.0
+        self.nn = -1
+        self.iterations
