@@ -151,4 +151,8 @@ class RRTPlanner():
         self.connectingtraj = []
         self.runningtime = 0.0
         self.nn = -1
-        self.iterations
+        self.iterations = 0
+        self.result = False
+        
+        # DEFAULT PARAMETERS
+        self.STEPS
