@@ -159,4 +159,7 @@ class RRTPlanner():
         self.INTERPOLATIONDURATION = 0.5
         # self.PLOT = False
         
-    
+        #Openrave paras
+        self.robot = robot
+        
+        self.discrtimestep = 1e-2 ## for colli
