@@ -155,4 +155,8 @@ class RRTPlanner():
         self.result = False
         
         # DEFAULT PARAMETERS
-        self.STEPS
+        self.STEPSIZE = 0.8
+        self.INTERPOLATIONDURATION = 0.5
+        # self.PLOT = False
+        
+    
