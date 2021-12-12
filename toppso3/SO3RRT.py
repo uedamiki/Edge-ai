@@ -162,4 +162,7 @@ class RRTPlanner():
         #Openrave paras
         self.robot = robot
         
-        self.discrtimestep = 1e-2 ## for colli
+        self.discrtimestep = 1e-2 ## for collision checking, etc.
+
+    def __str__(self):
+        ret = "Total running time :" + str(s
