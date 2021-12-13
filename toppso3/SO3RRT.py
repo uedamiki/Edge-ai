@@ -166,4 +166,8 @@ class RRTPlanner():
 
     def __str__(self):
         ret = "Total running time :" + str(self.runningtime) + "sec.\n"
-        ret += "Total number of iterations :" + str(self.iteration
+        ret += "Total number of iterations :" + str(self.iterations)
+        return ret
+
+    def RandomConfig(self):
+        """RandomConfig samples a random configurat
