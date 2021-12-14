@@ -176,4 +176,4 @@ class RRTPlanner():
         velupperlimit = 5  ##
         qs_rand = np.array([1e-1,1e-1,1e-1 ])
         # for i in range(3):
-        #     q
+        #     qs_rand[i] = self.RANDOM_NUMBER_GENERATOR.uniform(vellowerlimit,velupperlimit
