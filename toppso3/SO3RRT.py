@@ -180,4 +180,6 @@ class RRTPlanner():
         return Config(q_rand,qs_rand)
 
     def Extend(self, c_rand):
-        if (np.mod
+        if (np.mod(self.iterations - 1, 2) == FW):
+            ## treestart is to be extended
+            
