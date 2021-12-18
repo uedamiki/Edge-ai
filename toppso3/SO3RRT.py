@@ -195,4 +195,5 @@ class RRTPlanner():
             q_beg = v_near.config.q
             qs_beg = v_near.config.qs
             
-            ## check if c_
+            ## check if c_rand is too far from vnear
+            ## if the new ramdonly-chose node is close, i
