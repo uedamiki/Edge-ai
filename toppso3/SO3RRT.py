@@ -196,4 +196,4 @@ class RRTPlanner():
             qs_beg = v_near.config.qs
             
             ## check if c_rand is too far from vnear
-            ## if the new ramdonly-chose node is close, i
+            ## if the new ramdonly-chose node is close, it's safer . Or in another words, the interpolated path will have more chances that it won't coll
