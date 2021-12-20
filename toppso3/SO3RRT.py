@@ -200,4 +200,6 @@ class RRTPlanner():
             delta = self.Distance(v_near.config, c_rand)
             if (delta <= self.STEPSIZE):
                 q_end = c_rand.q
-            
+                STATUS = REACHED
+            else:
+                q_end = q_beg + self.STEPSIZE*(c_rand.q - q_beg)/np
