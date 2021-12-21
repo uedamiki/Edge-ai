@@ -204,4 +204,8 @@ class RRTPlanner():
             else:
                 q_end = q_beg + self.STEPSIZE*(c_rand.q - q_beg)/np.sqrt(delta)
                 q_end /= np.linalg.norm(q_end)
-                STATUS = ADVA
+                STATUS = ADVANCED
+            qs_end = c_rand.qs
+            c_new = Config(q_end, qs_end)
+
+            ##
