@@ -208,4 +208,5 @@ class RRTPlanner():
             qs_end = c_rand.qs
             c_new = Config(q_end, qs_end)
 
-            ##
+            ## check feasibility of c_new
+            if (not self.IsFeasibleConfig
