@@ -209,4 +209,5 @@ class RRTPlanner():
             c_new = Config(q_end, qs_end)
 
             ## check feasibility of c_new
-            if (not self.IsFeasibleConfig
+            if (not self.IsFeasibleConfig(c_new)):
+                # print "status : TRAPPED (infeasible configuration)"
