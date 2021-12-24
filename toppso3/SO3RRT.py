@@ -223,4 +223,5 @@ class RRTPlanner():
                 v_new = Vertex(c_new, FW)
                 # v_new.sdmin = result[1]
                 # v_new.sdmax = result[2]
- 
+                v_new.level = v_near.level + 1
+                self.treestart.AddVerte
