@@ -220,4 +220,7 @@ class RRTPlanner():
             result = self.IsFeasibleTrajectory(trajectory, q_beg, FW)
             if (result[0] == OK):
                   ## extension is now successful
-                v_new = Vertex(
+                v_new = Vertex(c_new, FW)
+                # v_new.sdmin = result[1]
+                # v_new.sdmax = result[2]
+ 
