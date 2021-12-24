@@ -218,4 +218,6 @@ class RRTPlanner():
             trajectory = lie.InterpolateSO3(rotationMatrixFromQuat(q_beg),rotationMatrixFromQuat(q_end),qs_beg,qs_end,self.INTERPOLATIONDURATION)
             ## check feasibility ( collision checking for the trajectory)
             result = self.IsFeasibleTrajectory(trajectory, q_beg, FW)
-            if (re
+            if (result[0] == OK):
+                  ## extension is now successful
+                v_new = Vertex(
