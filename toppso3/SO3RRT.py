@@ -227,4 +227,4 @@ class RRTPlanner():
                 self.treestart.AddVertex(v_near, trajectory, v_new)
                 return STATUS
             else:
-    
+                STATUS = TRAPPED  #trajecory doesnt satify the collision-free cons
