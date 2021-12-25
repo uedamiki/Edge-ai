@@ -227,4 +227,8 @@ class RRTPlanner():
                 self.treestart.AddVertex(v_near, trajectory, v_new)
                 return STATUS
             else:
-                STATUS = TRAPPED  #trajecory doesnt satify the collision-free cons
+                STATUS = TRAPPED  #trajecory doesnt satify the collision-free constraint
+        return STATUS
+
+    def ExtendBW(self, c_rand):
+        # Implement NearestneiborIndic
