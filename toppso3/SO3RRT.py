@@ -224,4 +224,7 @@ class RRTPlanner():
                 # v_new.sdmin = result[1]
                 # v_new.sdmax = result[2]
                 v_new.level = v_near.level + 1
-                self.treestart.AddVerte
+                self.treestart.AddVertex(v_near, trajectory, v_new)
+                return STATUS
+            else:
+    
