@@ -232,4 +232,6 @@ class RRTPlanner():
 
     def ExtendBW(self, c_rand):
         # Implement NearestneiborIndices return the list of nodes in order of increasing distance
-        nnindices = sel
+        nnindices = self.NearestNeighborIndices(c_rand, BW)
+        for index in nnindices:
+            v_nea
