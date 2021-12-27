@@ -234,4 +234,6 @@ class RRTPlanner():
         # Implement NearestneiborIndices return the list of nodes in order of increasing distance
         nnindices = self.NearestNeighborIndices(c_rand, BW)
         for index in nnindices:
-            v_nea
+            v_near = self.treeend.verticeslist[index]
+            q_end = v_near.config.q
+            qs_end = v_near.co
