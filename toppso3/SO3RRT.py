@@ -236,4 +236,7 @@ class RRTPlanner():
         for index in nnindices:
             v_near = self.treeend.verticeslist[index]
             q_end = v_near.config.q
-            qs_end = v_near.co
+            qs_end = v_near.config.qs
+
+            ## check if c_rand is too far from vnear
+            ## if the new ramdonly
