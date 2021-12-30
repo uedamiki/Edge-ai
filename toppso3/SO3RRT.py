@@ -249,4 +249,7 @@ class RRTPlanner():
                 q_beg /= np.linalg.norm(q_beg)
                 STATUS = ADVANCED
             qs_beg = c_rand.qs
-            c_new = Confi
+            c_new = Config(q_beg, qs_beg)
+            
+            ## check feasibility of c_new
+            if 
