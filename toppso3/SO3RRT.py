@@ -258,4 +258,4 @@ class RRTPlanner():
                 continue            
 
             ## interpolate a trajectory
-            #trajectory = lie.InterpolateSO3Zer
+            #trajectory = lie.InterpolateSO3ZeroOmega(rotationMatrixFromQuat(q_beg),rotationMatrixFromQuat(q_end),self.INTERP
