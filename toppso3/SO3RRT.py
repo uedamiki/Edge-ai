@@ -265,4 +265,6 @@ class RRTPlanner():
             if (result[0] == OK):
                 ## extension is now successful
                 v_new = Vertex(c_new, BW)
-                # v_new.sdmin = res
+                # v_new.sdmin = result[1]
+                # v_new.sdmax = result[2]
+                v_new.level = v_near.level 
