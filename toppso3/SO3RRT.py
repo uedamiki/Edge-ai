@@ -263,4 +263,6 @@ class RRTPlanner():
             ## check feasibility ( collision checking for the trajectory)
             result = self.IsFeasibleTrajectory(trajectory, q_beg, BW)
             if (result[0] == OK):
-                ## extension is now s
+                ## extension is now successful
+                v_new = Vertex(c_new, BW)
+                # v_new.sdmin = res
