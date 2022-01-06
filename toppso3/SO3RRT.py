@@ -269,4 +269,6 @@ class RRTPlanner():
                 # v_new.sdmax = result[2]
                 v_new.level = v_near.level + 1
                 self.treeend.AddVertex(v_near, trajectory, v_new)
-                retu
+                return STATUS
+            else:
+                STATUS = TRAPPED  #trajecory doesnt satify 
