@@ -271,4 +271,9 @@ class RRTPlanner():
                 self.treeend.AddVertex(v_near, trajectory, v_new)
                 return STATUS
             else:
-                STATUS = TRAPPED  #trajecory doesnt satify 
+                STATUS = TRAPPED  #trajecory doesnt satify the collision-free constraint
+        return STATUS
+
+
+    def Connect(self):
+        if (np.m
