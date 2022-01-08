@@ -284,4 +284,6 @@ class RRTPlanner():
             res = self.ConnectFW()
         return res
         
-    def ConnectFW(s
+    def ConnectFW(self):
+        v_test = self.treeend.verticeslist[-1]
+        nnindices = self.NearestNeighbor
