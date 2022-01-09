@@ -294,4 +294,7 @@ class RRTPlanner():
             qs_beg = v_near.config.qs
             
             q_end = v_test.config.q
-            qs_end = v_t
+            qs_end = v_test.config.qs
+            
+             ## interpolate a trajectory
+            #trajectory 
