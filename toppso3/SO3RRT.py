@@ -297,4 +297,4 @@ class RRTPlanner():
             qs_end = v_test.config.qs
             
              ## interpolate a trajectory
-            #trajectory 
+            #trajectory = lie.InterpolateSO3ZeroOmega(rotationMatrixFromQuat(q_beg),rotationMatrixFromQuat(q_en
