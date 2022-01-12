@@ -306,4 +306,8 @@ class RRTPlanner():
                 self.treestart.verticeslist.append(v_near)
                 self.connectingtraj = trajectory
                 return REACHED
-        
+        return TRAPPED
+
+    def ConnectBW(self):
+        v_test = self.treestart.verticeslist[-1]
+      
