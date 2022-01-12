@@ -304,4 +304,6 @@ class RRTPlanner():
             if (result[0] == 1):
                  ## conection is now successful
                 self.treestart.verticeslist.append(v_near)
-  
+                self.connectingtraj = trajectory
+                return REACHED
+        
