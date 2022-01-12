@@ -302,3 +302,6 @@ class RRTPlanner():
              ## check feasibility ( collision checking for the trajectory)
             result = self.IsFeasibleTrajectory(trajectory, q_beg, FW)
             if (result[0] == 1):
+                 ## conection is now successful
+                self.treestart.verticeslist.append(v_near)
+  
