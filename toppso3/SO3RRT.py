@@ -317,4 +317,7 @@ class RRTPlanner():
             q_end = v_near.config.q
             qs_end = v_near.config.qs
              
-            q_beg = v_
+            q_beg = v_test.config.q
+            qs_beg = v_test.config.qs
+            
+            ## interpolat
