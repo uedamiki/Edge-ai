@@ -327,4 +327,5 @@ class RRTPlanner():
             result = self.IsFeasibleTrajectory(trajectory, q_beg, BW)
             if (result[0] == 1):
                  ## conection is now successful
-                self.tre
+                self.treeend.verticeslist.append(v_near)
+                self.connectingtraj = trajectory
