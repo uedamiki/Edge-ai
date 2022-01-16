@@ -329,3 +329,7 @@ class RRTPlanner():
                  ## conection is now successful
                 self.treeend.verticeslist.append(v_near)
                 self.connectingtraj = trajectory
+                return REACHED
+        return TRAPPED
+
+    def IsFeasibleConfig(sel
