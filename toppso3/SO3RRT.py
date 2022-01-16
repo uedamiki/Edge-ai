@@ -332,4 +332,6 @@ class RRTPlanner():
                 return REACHED
         return TRAPPED
 
-    def IsFeasibleConfig(sel
+    def IsFeasibleConfig(self, c_rand):
+        """IsFeasibleConfig checks feasibility of the given Config object. 
+   
