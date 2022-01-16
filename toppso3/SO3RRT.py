@@ -325,4 +325,6 @@ class RRTPlanner():
             trajectory = lie.InterpolateSO3(rotationMatrixFromQuat(q_beg),rotationMatrixFromQuat(q_end),qs_beg,qs_end,self.INTERPOLATIONDURATION)
              ## check feasibility ( collision checking for the trajectory)
             result = self.IsFeasibleTrajectory(trajectory, q_beg, BW)
-       
+            if (result[0] == 1):
+                 ## conection is now successful
+                self.tre
