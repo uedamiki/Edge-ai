@@ -336,4 +336,7 @@ class RRTPlanner():
         """IsFeasibleConfig checks feasibility of the given Config object. 
         Feasibility conditions are to be determined by each RRT planner.
         """
+        env = self.robot.GetEnv()
+        with self.robot:
+            transformation = eye(4)
        
