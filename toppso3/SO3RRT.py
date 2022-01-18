@@ -342,4 +342,6 @@ class RRTPlanner():
             transformation[0:3,0:3] = rotationMatrixFromQuat(c_rand.q)
             self.robot.SetTransform(transformation)
             isincollision = (env.CheckCollision(self.robot, CollisionReport()))
-         
+            if (isincollision):
+                # print "\t in-collision"
+                retu
