@@ -353,4 +353,6 @@ class RRTPlanner():
         """IsFeasibleTrajectory checks feasibility of the given trajectory.
         Feasibility conditions are to be determined by each RRT planner.
         """
-        #
+        ## check collision
+        env = self.robot.GetEnv()
+        #traj = Trajectory.PiecewisePolynomial
