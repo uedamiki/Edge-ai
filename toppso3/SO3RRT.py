@@ -344,4 +344,9 @@ class RRTPlanner():
             isincollision = (env.CheckCollision(self.robot, CollisionReport()))
             if (isincollision):
                 # print "\t in-collision"
-                retu
+                return False
+            else:
+                return True
+
+
+    def IsFeasibleTrajectory(self, traj
