@@ -355,4 +355,6 @@ class RRTPlanner():
         """
         ## check collision
         env = self.robot.GetEnv()
-        #traj = Trajectory.PiecewisePolynomial
+        #traj = Trajectory.PiecewisePolynomialTrajectory.FromString(trajectory)
+        traj = trajectory
+        R_beg =  rotationMatrixFromQ
