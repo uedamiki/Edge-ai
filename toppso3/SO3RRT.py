@@ -357,4 +357,6 @@ class RRTPlanner():
         env = self.robot.GetEnv()
         #traj = Trajectory.PiecewisePolynomialTrajectory.FromString(trajectory)
         traj = trajectory
-        R_beg =  rotationMatrixFromQ
+        R_beg =  rotationMatrixFromQuat(q_beg)
+        for s in np.arange(0, traj.duration, self.discrtimestep):
+            wi
