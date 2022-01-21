@@ -359,4 +359,6 @@ class RRTPlanner():
         traj = trajectory
         R_beg =  rotationMatrixFromQuat(q_beg)
         for s in np.arange(0, traj.duration, self.discrtimestep):
-            wi
+            with self.robot:
+                transformation = eye(4)
+                transformation[0:3,0:3
