@@ -361,4 +361,5 @@ class RRTPlanner():
         for s in np.arange(0, traj.duration, self.discrtimestep):
             with self.robot:
                 transformation = eye(4)
-                transformation[0:3,0:3
+                transformation[0:3,0:3] = lie.EvalRotation(R_beg, traj, s)
+                self.robot.SetTransform(transforma
