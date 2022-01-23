@@ -381,4 +381,6 @@ class RRTPlanner():
 
 
     def Run(self, allottedtime):
-        if 
+        if (self.result):
+            print "The planner has already found a path."
+            re
