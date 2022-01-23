@@ -373,4 +373,7 @@ class RRTPlanner():
             isincollision = (env.CheckCollision(self.robot, CollisionReport()))
         if (isincollision):
             return [INCOLLISION]
-    
+        else:
+            if (direction == FW):
+                return [OK]
+            els
