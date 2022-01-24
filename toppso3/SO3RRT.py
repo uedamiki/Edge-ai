@@ -388,4 +388,6 @@ class RRTPlanner():
         t = 0.0
         prev_it = self.iterations
 
-        while 
+        while (t < allottedtime):
+            self.iterations += 1
+            # print "\033[1;34miterat
