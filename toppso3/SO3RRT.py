@@ -394,4 +394,6 @@ class RRTPlanner():
             t_begin = time.time()
             
             c_rand = self.RandomConfig()
-            if (self.Extend(c_rand) != TRAP
+            if (self.Extend(c_rand) != TRAPPED):
+                print "\033[1;32mTree start : ", len(self.treestart.verticeslist), 
+        
