@@ -399,4 +399,5 @@ class RRTPlanner():
                 print "; Tree end : ", len(self.treeend.verticeslist), "\033[0m"
                 if (self.Connect() == REACHED):
                     print "\033[1;32mPath found"
-            
+                    print "    Total number of iterations:", self.iterations
+                    t_end = 
