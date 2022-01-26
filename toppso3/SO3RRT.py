@@ -400,4 +400,6 @@ class RRTPlanner():
                 if (self.Connect() == REACHED):
                     print "\033[1;32mPath found"
                     print "    Total number of iterations:", self.iterations
-                    t_end = 
+                    t_end = time.time()
+                    t += t_end - t_begin
+                    self.runningtime += 
