@@ -406,4 +406,6 @@ class RRTPlanner():
                     print "    Total running time:", self.runningtime, "sec.", "\033[0m"
                     self.result = True
                     return True
-          
+            t_end = time.time()
+            t += t_end - t_begin
+            self.runningtime += t_end 
