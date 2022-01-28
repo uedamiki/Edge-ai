@@ -409,4 +409,8 @@ class RRTPlanner():
             t_end = time.time()
             t += t_end - t_begin
             self.runningtime += t_end - t_begin
-        print "\033[1;31mAllotted time (", allottedtime, " sec.) is exhausted after", s
+        print "\033[1;31mAllotted time (", allottedtime, " sec.) is exhausted after", self.iterations - prev_it, "iterations.", "\033[0m"
+        return False
+
+
+    def Dista
