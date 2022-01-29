@@ -419,3 +419,5 @@ class RRTPlanner():
         return Utils.QuatDistance(c_test0.q, c_test1.q)
 
         
+    def NearestNeighborIndices(self, c_rand, treetype, custom_nn = 0):
+        """Near
