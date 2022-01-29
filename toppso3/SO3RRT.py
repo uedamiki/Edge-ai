@@ -414,4 +414,8 @@ class RRTPlanner():
 
 
     def Distance(self, c_test0, c_test1):
-        """Distance measures distance between 2 configs, ctest0 
+        """Distance measures distance between 2 configs, ctest0 and ctest1
+        """
+        return Utils.QuatDistance(c_test0.q, c_test1.q)
+
+        
