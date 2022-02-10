@@ -424,4 +424,7 @@ class RRTPlanner():
         on the tree specified by treetype.
         """
         if (treetype == FW):
-            tree = sel
+            tree = self.treestart
+            nv = len(tree)
+        else:
+            tree = 
