@@ -427,4 +427,7 @@ class RRTPlanner():
             tree = self.treestart
             nv = len(tree)
         else:
-            tree = 
+            tree = self.treeend
+            nv = len(tree)
+            
+        distancelist = [self.Distanc
