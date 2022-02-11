@@ -436,4 +436,7 @@ class RRTPlanner():
         if (custom_nn == 0):
             nn = self.nn
         else:
-            nn = c
+            nn = custom_nn
+        
+        if (nn == -1): #using all of the vertexes in the tree
+            nn 
