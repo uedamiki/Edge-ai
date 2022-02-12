@@ -439,4 +439,7 @@ class RRTPlanner():
             nn = custom_nn
         
         if (nn == -1): #using all of the vertexes in the tree
-            nn 
+            nn = nv
+        else:
+            nn = min(self.nn, nv)
+        nnindices = 
