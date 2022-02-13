@@ -446,4 +446,6 @@ class RRTPlanner():
         return nnindices
 
 
-    def GenFinalTrajLi
+    def GenFinalTrajList(self):
+        if (not self.result):
+            print "The Planner did not find any path 
