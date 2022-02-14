@@ -448,4 +448,7 @@ class RRTPlanner():
 
     def GenFinalTrajList(self):
         if (not self.result):
-            print "The Planner did not find any path 
+            print "The Planner did not find any path from start to goal."
+            return []
+        TrajectoryList = []
+        TrajectoryL
