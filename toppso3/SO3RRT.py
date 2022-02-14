@@ -451,4 +451,6 @@ class RRTPlanner():
             print "The Planner did not find any path from start to goal."
             return []
         TrajectoryList = []
-        TrajectoryL
+        TrajectoryList = self.treestart.GenTrajList()
+        if (self.connectingtraj != []):
+         
