@@ -453,4 +453,5 @@ class RRTPlanner():
         TrajectoryList = []
         TrajectoryList = self.treestart.GenTrajList()
         if (self.connectingtraj != []):
-         
+            TrajectoryList.append(self.connectingtraj)
+        if (self.treeend.GenT
