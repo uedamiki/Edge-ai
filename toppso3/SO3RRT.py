@@ -455,4 +455,9 @@ class RRTPlanner():
         if (self.connectingtraj != []):
             TrajectoryList.append(self.connectingtraj)
         if (self.treeend.GenTrajList()!= []):
-            TrajectoryList.extend(self.treeend.GenTrajList()
+            TrajectoryList.extend(self.treeend.GenTrajList())
+        #print len(TrajectoryList)
+        return TrajectoryList
+
+    
+    def GenFinal
