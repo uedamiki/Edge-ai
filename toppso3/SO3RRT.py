@@ -460,4 +460,6 @@ class RRTPlanner():
         return TrajectoryList
 
     
-    def GenFinal
+    def GenFinalRotationMatrixList(self):
+        if (not self.result):
+            print "The Planner did 
