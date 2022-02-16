@@ -467,4 +467,5 @@ class RRTPlanner():
         
         RotationMatrixList = []
         RotationMatrixList = self.treestart.GenRotationMatList()
-        if 
+        if (self.treeend.GenRotationMatList() != []):
+            RotationMatrixList.extend(s
