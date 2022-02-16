@@ -462,4 +462,7 @@ class RRTPlanner():
     
     def GenFinalRotationMatrixList(self):
         if (not self.result):
-            print "The Planner did 
+            print "The Planner did not find any path from start to goal."
+            return []
+        
+        RotationMatrixList 
