@@ -1,0 +1,2 @@
+from openravepy import *
+fr
