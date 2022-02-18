@@ -19,4 +19,7 @@ import pdb ########################
 import matplotlib.pyplot as plt
 
 
-def Quat
+def QuatDistance(quat0, quat1): 
+    rotationweight = 1
+    innerProduct = dot(quat0,quat1)
+    quatDist
