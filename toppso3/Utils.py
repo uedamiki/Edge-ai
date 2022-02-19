@@ -31,4 +31,8 @@ def SO3Distance(R0, R1): # bi-invariance
 def R3Distance(b0, b1):
     return linalg.norm(b1-b0)
 
-def SE3Distance(X0, X1, c = None, d = None)
+def SE3Distance(X0, X1, c = None, d = None): # left invariance
+    R0 = X0[:3,:3]
+    R1 = X1[:3,:3]
+    b0 = X0[:3,3]
+    b1 
