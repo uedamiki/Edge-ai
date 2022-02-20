@@ -42,4 +42,6 @@ def SE3Distance(X0, X1, c = None, d = None): # left invariance
     if (d == None):
         d = 1
     else: d = d
-    return sqrt(c*(SO3Distance(R0,R1)**2) + d*(R3Dis
+    return sqrt(c*(SO3Distance(R0,R1)**2) + d*(R3Distance(b0,b1)**2))
+    
+################## interpolate translation #######################
