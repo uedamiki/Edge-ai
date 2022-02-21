@@ -46,3 +46,7 @@ def SE3Distance(X0, X1, c = None, d = None): # left invariance
     
 ################## interpolate translation ####################################
 def TrajString3rdDegree(q_beg, q_end, qs_beg, qs_end, duration):
+    trajectorystring = ''
+    ndof = len(q_beg)
+    
+    trajectorystring += "%f\n%d"%(duration
