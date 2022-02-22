@@ -53,4 +53,7 @@ def TrajString3rdDegree(q_beg, q_end, qs_beg, qs_end, duration):
 
     for k in range(ndof):
         a, b, c, d = Utilities.Interpolate3rdDegree(q_beg[k], q_end[k], qs_beg[k], qs_end[k], duration)
-        trajectorystring += "\n%f %f %f %
+        trajectorystring += "\n%f %f %f %f"%(d, c, b, a)
+    return trajectorystring
+
+#################### SE3 traj ##############
