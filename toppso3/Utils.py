@@ -63,3 +63,8 @@ def SE3TrajFromTransandSO3(transtraj, rtraj): # same chunk.duration
     if len(transtraj.chunkslist) != len(rtraj.chunkslist):
         print 'error'
         return 0
+    clist = []
+    for c in transtraj.chunkslist:
+        plist = []
+        for i in range(3):
+     
