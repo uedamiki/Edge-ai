@@ -60,4 +60,6 @@ def TrajString3rdDegree(q_beg, q_end, qs_beg, qs_end, duration):
 
 def SE3TrajFromTransandSO3(transtraj, rtraj): # same chunk.duration
     #return duration-dimension-trans polynomial- rot polynomial
-    if len(transt
+    if len(transtraj.chunkslist) != len(rtraj.chunkslist):
+        print 'error'
+        return 0
