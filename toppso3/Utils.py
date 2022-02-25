@@ -67,4 +67,6 @@ def SE3TrajFromTransandSO3(transtraj, rtraj): # same chunk.duration
     for c in transtraj.chunkslist:
         plist = []
         for i in range(3):
-     
+            plist.append(c.polynomialsvector[i])
+        for i in range(3):
+            rc = r
