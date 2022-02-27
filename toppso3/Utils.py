@@ -73,4 +73,6 @@ def SE3TrajFromTransandSO3(transtraj, rtraj): # same chunk.duration
             plist.append(rc.polynomialsvector[i])
         chunk = Trajectory.Chunk(c.duration, plist)
         clist.append(chunk)
-    return
+    return Trajectory.PiecewisePolynomialTrajectory(clist)
+
+###################### Decompose SE3 traj to ROT and Tr
