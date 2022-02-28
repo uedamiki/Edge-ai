@@ -79,4 +79,5 @@ def SE3TrajFromTransandSO3(transtraj, rtraj): # same chunk.duration
 def TransRotTrajFromSE3Traj(SE3traj):
     transclist = []
     rclist = []
- 
+    for c in SE3traj.chunkslist:
+        transchunk = Trajectory.Chunk(c.durati
