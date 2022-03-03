@@ -88,4 +88,5 @@ def TransRotTrajFromSE3Traj(SE3traj):
     rtraj = Trajectory.PiecewisePolynomialTrajectory(rclist)
     return transtraj, rtraj
 
-##########################SE3 constraint #######
+##########################SE3 constraint ########################################
+def ComputeSE3Constraints(SE3traj, taumax, fmax, discrtimestep, I
