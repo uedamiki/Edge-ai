@@ -89,4 +89,6 @@ def TransRotTrajFromSE3Traj(SE3traj):
     return transtraj, rtraj
 
 ##########################SE3 constraint ########################################
-def ComputeSE3Constraints(SE3traj, taumax, fmax, discrtimestep, I
+def ComputeSE3Constraints(SE3traj, taumax, fmax, discrtimestep, I = None, m = None):
+    ndiscrsteps = int((SE3traj.duration + 1e-10) / discrtimestep) + 1
+   
