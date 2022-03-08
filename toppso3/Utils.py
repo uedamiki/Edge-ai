@@ -118,3 +118,7 @@ def ComputeSE3Constraints(SE3traj, taumax, fmax, discrtimestep, I = None, m = No
         C2 = -(2*cnr+nr*snr-2)/nr4 * rdrd*rcrd
         C3 = (3*snr-nr*cnr - 2*nr)/nr5 * rdrd*cross(r,rcrd)
         C = C1+C2+C3
+
+        Ard = dot(Amat,rd)
+        if I is None:            
+            at = A
