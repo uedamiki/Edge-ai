@@ -121,4 +121,8 @@ def ComputeSE3Constraints(SE3traj, taumax, fmax, discrtimestep, I = None, m = No
 
         Ard = dot(Amat,rd)
         if I is None:            
-            at = A
+            at = Ard
+            bt = dot(Amat,rdd) + C
+        else:
+            at = dot(I,Ard)
+            bt = dot(I,dot(
