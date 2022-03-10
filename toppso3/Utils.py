@@ -131,4 +131,8 @@ def ComputeSE3Constraints(SE3traj, taumax, fmax, discrtimestep, I = None, m = No
         a[i,9:12] = -at
         b[i,3:6] = bt
         b[i,9:12] = -bt
-       
+        c[i,3:6] = -taumax
+        c[i,9:12] = -taumax
+
+        #transconstraints
+        td = t
