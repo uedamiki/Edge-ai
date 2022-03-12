@@ -138,4 +138,9 @@ def ComputeSE3Constraints(SE3traj, taumax, fmax, discrtimestep, I = None, m = No
         td = transtraj.Evald(t)
         tdd = transtraj.Evaldd(t)
         if m is None:
-       
+            at = td
+            bt = tdd
+
+        a[i,:3] = at
+        a[i,6:9] = -at
+  
