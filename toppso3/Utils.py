@@ -149,4 +149,6 @@ def ComputeSE3Constraints(SE3traj, taumax, fmax, discrtimestep, I = None, m = No
         c[i,6:9] = -fmax
     return a, b, c
 
-######################## se3 traj collision checking ############
+######################## se3 traj collision checking ########################
+
+def CheckCollisionSE3Traj( robot, transtraj, rtraj, R_beg,  checkcollisiontime
