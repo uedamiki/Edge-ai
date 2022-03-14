@@ -157,4 +157,7 @@ def CheckCollisionSE3Traj( robot, transtraj, rtraj, R_beg,  checkcollisiontimest
        It returns True if any config along the traj is IN-COLLISION.
     """
     env = robot.GetEnv()
-    for s in np.arange(0, transtraj.duration, checkcollisi
+    for s in np.arange(0, transtraj.duration, checkcollisiontimestep):
+        with robot:
+            transformation = eye(4)
+            transformation[0:3,0:
