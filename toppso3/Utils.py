@@ -163,4 +163,5 @@ def CheckCollisionSE3Traj( robot, transtraj, rtraj, R_beg,  checkcollisiontimest
             transformation[0:3,0:3] = lie.EvalRotation(R_beg, rtraj, s)
             transformation[0:3,3] = transtraj.Eval(s)
             robot.SetTransform(transformation)           
-            isincoll
+            isincollision = (env.CheckCollision(robot, CollisionReport()))
+            #print  "s 
