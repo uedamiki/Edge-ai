@@ -171,4 +171,9 @@ def CheckCollisionSE3Traj( robot, transtraj, rtraj, R_beg,  checkcollisiontimest
         robot.SetTransform(transformation)
         isincollision = (env.CheckCollision(robot, CollisionReport()))
         if (isincollision):
-            retu
+            return True
+        else:
+            return False
+
+
+######################### SE3 shortcutting ##############
