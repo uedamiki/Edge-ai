@@ -176,4 +176,5 @@ def CheckCollisionSE3Traj( robot, transtraj, rtraj, R_beg,  checkcollisiontimest
             return False
 
 
-######################### SE3 shortcutting ##############
+######################### SE3 shortcutting ##################################
+def SE3Shortcut(robot, taumax, fmax, vmax, se3traj, Rlist, 
