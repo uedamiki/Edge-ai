@@ -179,3 +179,7 @@ def CheckCollisionSE3Traj( robot, transtraj, rtraj, R_beg,  checkcollisiontimest
 ######################### SE3 shortcutting ##################################
 def SE3Shortcut(robot, taumax, fmax, vmax, se3traj, Rlist, maxiter, expectedduration = -1,  meanduration = 0, upperlimit = -1, plotdura = None):
     if plotdura == 1:
+        plt.axis([0, maxiter, 0, se3traj.duration])
+        plt.ion()
+        plt.show()
+        ylabel('T
