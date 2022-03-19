@@ -182,4 +182,7 @@ def SE3Shortcut(robot, taumax, fmax, vmax, se3traj, Rlist, maxiter, expecteddura
         plt.axis([0, maxiter, 0, se3traj.duration])
         plt.ion()
         plt.show()
-        ylabel('T
+        ylabel('Trajectory duration (s)')
+        xlabel('Iteration')
+
+    t_sc_start = time
