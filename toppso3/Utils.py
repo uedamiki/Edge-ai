@@ -198,4 +198,6 @@ def SE3Shortcut(robot, taumax, fmax, vmax, se3traj, Rlist, maxiter, expecteddura
     ## for shortcutting
     integrationtimestep = 1e-2             
     reparamtimestep = 1e-2                  
-    passswitchpointnsteps 
+    passswitchpointnsteps = 5                
+    discrtimestep = 1e-2                    
+    assert(dur > 10.0*disc
