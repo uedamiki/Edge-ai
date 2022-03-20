@@ -196,4 +196,6 @@ def SE3Shortcut(robot, taumax, fmax, vmax, se3traj, Rlist, maxiter, expecteddura
     attempt = 0
 
     ## for shortcutting
-    inte
+    integrationtimestep = 1e-2             
+    reparamtimestep = 1e-2                  
+    passswitchpointnsteps 
