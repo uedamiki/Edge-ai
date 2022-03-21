@@ -212,4 +212,6 @@ def SE3Shortcut(robot, taumax, fmax, vmax, se3traj, Rlist, maxiter, expecteddura
 
     for it in range(maxiter):
         if plotdura == 1:
-            plt.sca
+            plt.scatter(it, se3traj.duration)
+            plt.draw()
+        #transtraj, rtraj = TransRotTrajFro
