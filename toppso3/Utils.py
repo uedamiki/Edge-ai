@@ -206,4 +206,5 @@ def SE3Shortcut(robot, taumax, fmax, vmax, se3traj, Rlist, maxiter, expecteddura
     nnotretimable = 0 
     nnotshorter = 0
     
-    transtraj, rtraj = Tr
+    transtraj, rtraj = TransRotTrajFromSE3Traj(se3traj)
+    lietraj = lie.SplitTraj(Rlist, rt
