@@ -216,4 +216,4 @@ def SE3Shortcut(robot, taumax, fmax, vmax, se3traj, Rlist, maxiter, expecteddura
             plt.draw()
         #transtraj, rtraj = TransRotTrajFromSE3Traj(se3traj)
         #lietraj = lie.SplitTraj2(Rlist, rtraj)
-        if (expecteddurat
+        if (expectedduration > 0): # check, if newlietraj.duration is short enough, stop SHORTC
