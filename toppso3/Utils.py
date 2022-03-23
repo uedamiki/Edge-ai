@@ -219,4 +219,6 @@ def SE3Shortcut(robot, taumax, fmax, vmax, se3traj, Rlist, maxiter, expecteddura
         if (expectedduration > 0): # check, if newlietraj.duration is short enough, stop SHORTCUTING
             if (se3traj.duration < expectedduration):
                 print "\033[1;32mTrajectory's duration is already shorter than expected time --> stop shortcuting\033[0m"
-            
+                break
+        if (dur < discrtimestep):
+            print "[Utils::Sho
