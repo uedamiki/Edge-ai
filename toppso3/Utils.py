@@ -221,4 +221,5 @@ def SE3Shortcut(robot, taumax, fmax, vmax, se3traj, Rlist, maxiter, expecteddura
                 print "\033[1;32mTrajectory's duration is already shorter than expected time --> stop shortcuting\033[0m"
                 break
         if (dur < discrtimestep):
-            print "[Utils::Sho
+            print "[Utils::Shortcut] trajectory duration is less than discrtimestep.\n"
+            break ## otherwise, this will 
