@@ -225,4 +225,7 @@ def SE3Shortcut(robot, taumax, fmax, vmax, se3traj, Rlist, maxiter, expecteddura
             break ## otherwise, this will cause an error in TOPP        
         
         ## select an interval for shortcutting
-  
+        t0 = random.rand()* dur
+        
+        if meanduration == 0:
+          
