@@ -238,3 +238,7 @@ def SE3Shortcut(robot, taumax, fmax, vmax, se3traj, Rlist, maxiter, expecteddura
             if meanduration == 0:
                 meanduration = dur - t0
                 
+            T = random.rand()*min(meanduration, dur - t0)
+            t1 = t0 + T
+
+           
