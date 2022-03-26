@@ -234,4 +234,7 @@ def SE3Shortcut(robot, taumax, fmax, vmax, se3traj, Rlist, maxiter, expecteddura
         t1 = t0 + T
 
         while (T < 2.0*discrtimestep):
-            t0 = random.r
+            t0 = random.rand()*dur
+            if meanduration == 0:
+                meanduration = dur - t0
+                
