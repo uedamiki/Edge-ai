@@ -247,4 +247,7 @@ def SE3Shortcut(robot, taumax, fmax, vmax, se3traj, Rlist, maxiter, expecteddura
                     temp = t0
                     t0 = t1
                     t1 = temp
-               
+                    T = t1 - t0
+
+        # print "\n\nShortcutting iteration", it + 1
+        # print t0, t1, t1- t0
