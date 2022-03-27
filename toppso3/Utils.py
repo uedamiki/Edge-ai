@@ -250,4 +250,7 @@ def SE3Shortcut(robot, taumax, fmax, vmax, se3traj, Rlist, maxiter, expecteddura
                     T = t1 - t0
 
         # print "\n\nShortcutting iteration", it + 1
-        # print t0, t1, t1- t0
+        # print t0, t1, t1- t0       
+        # interpolate from t0 to t1
+        R_beg = lietraj.EvalRotation(t0)
+    
