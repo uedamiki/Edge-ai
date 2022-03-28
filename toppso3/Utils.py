@@ -260,4 +260,7 @@ def SE3Shortcut(robot, taumax, fmax, vmax, se3traj, Rlist, maxiter, expecteddura
 
         t_beg = transtraj.Eval(t0)
         t_end = transtraj.Eval(t1)
-        v_beg = transt
+        v_beg = transtraj.Evald(t0)
+        v_end = transtraj.Evald(t1)
+        
+        shortcuttranst
