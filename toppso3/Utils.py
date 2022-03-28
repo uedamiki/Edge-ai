@@ -253,4 +253,6 @@ def SE3Shortcut(robot, taumax, fmax, vmax, se3traj, Rlist, maxiter, expecteddura
         # print t0, t1, t1- t0       
         # interpolate from t0 to t1
         R_beg = lietraj.EvalRotation(t0)
-    
+        R_end = lietraj.EvalRotation(t1)
+        omega0 = lietraj.EvalOmega(t0)
+        omega1 = lietraj.
