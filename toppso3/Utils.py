@@ -276,4 +276,5 @@ def SE3Shortcut(robot, taumax, fmax, vmax, se3traj, Rlist, maxiter, expecteddura
             ret = x.RunComputeProfiles(1,1) 
             if (ret == 1):
                 x.resduration
-       
+                ## check whether the new one has shorter duration
+                if (
