@@ -271,4 +271,6 @@ def SE3Shortcut(robot, taumax, fmax, vmax, se3traj, Rlist, maxiter, expecteddura
         isincollision = CheckCollisionSE3Traj(robot, shortcuttranstraj, shortcutrtraj, R_beg, discrtimestep)
         if (not isincollision):
             a,b,c = ComputeSE3Constraints(shortcutse3traj, taumax, fmax, discrtimestep)
-            topp_inst = TOPP.QuadraticConstraints(shortcutse3tr
+            topp_inst = TOPP.QuadraticConstraints(shortcutse3traj, discrtimestep, vmax, list(a), list(b), list(c))
+            x = topp_inst.solver
+    
