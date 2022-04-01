@@ -278,4 +278,6 @@ def SE3Shortcut(robot, taumax, fmax, vmax, se3traj, Rlist, maxiter, expecteddura
                 x.resduration
                 ## check whether the new one has shorter duration
                 if (x.resduration + 0.1 < T): #skip if not shorter than 0.1 s
-            
+                    
+                    x.ReparameterizeTrajectory()
+               
