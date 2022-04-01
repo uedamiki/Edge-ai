@@ -280,4 +280,5 @@ def SE3Shortcut(robot, taumax, fmax, vmax, se3traj, Rlist, maxiter, expecteddura
                 if (x.resduration + 0.1 < T): #skip if not shorter than 0.1 s
                     
                     x.ReparameterizeTrajectory()
-               
+                    x.WriteResultTrajectory()
+                    TOPPed_shortcutse3
