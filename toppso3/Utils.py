@@ -285,4 +285,6 @@ def SE3Shortcut(robot, taumax, fmax, vmax, se3traj, Rlist, maxiter, expecteddura
                     TOPPed_shortcuttranstraj, TOPPed_shortcutrtraj = TransRotTrajFromSE3Traj(TOPPed_shortcutse3traj)
                     newlietraj = ReplaceTrajectorySegment(lietraj, TOPPed_shortcutrtraj , t0, t1)
                    
-                    newtranstraj = ReplaceTransTraj
+                    newtranstraj = ReplaceTransTrajectorySegment(transtraj, TOPPed_shortcuttranstraj, t0,t1)
+
+                    ###
