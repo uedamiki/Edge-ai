@@ -295,4 +295,8 @@ def SE3Shortcut(robot, taumax, fmax, vmax, se3traj, Rlist, maxiter, expecteddura
                     rtraj = newrtraj
                     transtraj = newtranstraj
                     lietraj = newlietraj
-                    se3traj = newse3tra
+                    se3traj = newse3traj
+                    
+                    dur = se3traj.duration
+
+                   
