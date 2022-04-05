@@ -291,4 +291,6 @@ def SE3Shortcut(robot, taumax, fmax, vmax, se3traj, Rlist, maxiter, expecteddura
                     newrtraj = Trajectory.PiecewisePolynomialTrajectory.FromString(TrajStringFromTrajList(newlietraj.trajlist))
                     newse3traj = SE3TrajFromTransandSO3(newtranstraj,newrtraj)
 
-                    Rlist 
+                    Rlist = newlietraj.Rlist
+                    rtraj = newrtraj
+                    transtraj 
