@@ -301,4 +301,5 @@ def SE3Shortcut(robot, taumax, fmax, vmax, se3traj, Rlist, maxiter, expecteddura
 
                     #print "*******************************************"
                     print "Success at iteration",it + 1,":", t0, t1,"Deta_t:", t1 - t0 - x.resduration
-                    attem
+                    attempt += 1
+                    #print "T:", nnotretimable, "; S:", nnotshorte
