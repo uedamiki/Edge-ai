@@ -306,4 +306,7 @@ def SE3Shortcut(robot, taumax, fmax, vmax, se3traj, Rlist, maxiter, expecteddura
                     #print "*******************************************"
                 else:
                     # print "Not shorter"
-            
+                    nnotshorter += 1
+            else: 
+                # print "Not retimable"
+     
