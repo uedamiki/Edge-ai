@@ -321,3 +321,9 @@ def SE3Shortcut(robot, taumax, fmax, vmax, se3traj, Rlist, maxiter, expecteddura
     print "\033[1;32mRunning time:",t_sc_end-t_sc_start, "sec.\033[0m"
     
     return se3traj, Rlist
+
+
+
+#############################
+
+def ReplaceTransTrajectorySegment(originaltranstraj, trans
