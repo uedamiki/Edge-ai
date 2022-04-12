@@ -327,4 +327,5 @@ def SE3Shortcut(robot, taumax, fmax, vmax, se3traj, Rlist, maxiter, expecteddura
 #############################
 
 def ReplaceTransTrajectorySegment(originaltranstraj, transtrajsegment, t0,t1):
-    """ReplaceTransTrajectorySegment replaces the segment (t0, t1) in the (ar
+    """ReplaceTransTrajectorySegment replaces the segment (t0, t1) in the (arbitrary degree) originaltranstraj 
+    with an (arbitrary degree) transtrajseg
