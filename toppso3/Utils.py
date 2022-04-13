@@ -333,4 +333,7 @@ def ReplaceTransTrajectorySegment(originaltranstraj, transtrajsegment, t0,t1):
     assert(t1 > t0)
     
     newchunkslist = []
-    i0, rem0 = originaltrans
+    i0, rem0 = originaltranstraj.FindChunkIndex(t0)
+    i1, rem1 = originaltranstraj.FindChunkIndex(t1)
+             
+    ## ch
