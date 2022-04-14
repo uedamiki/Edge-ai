@@ -340,4 +340,7 @@ def ReplaceTransTrajectorySegment(originaltranstraj, transtrajsegment, t0,t1):
     ## if not, insert chunk 0 to chunk i0 - 1 into newchunkslist
     if i0 > 0:
         for c in originaltranstraj.chunkslist[0: i0]:
-       
+            newchunkslist.append(c)
+
+    ## remainderchunk0
+    remchunk0 = Trajectory.Chunk(rem0, originaltranstraj.
