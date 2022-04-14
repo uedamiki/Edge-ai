@@ -337,4 +337,7 @@ def ReplaceTransTrajectorySegment(originaltranstraj, transtrajsegment, t0,t1):
     i1, rem1 = originaltranstraj.FindChunkIndex(t1)
              
     ## check if t0 falls in the first chunk. 
-    ## if not, insert chunk 0 to chunk i0 - 1 into newchunkslis
+    ## if not, insert chunk 0 to chunk i0 - 1 into newchunkslist
+    if i0 > 0:
+        for c in originaltranstraj.chunkslist[0: i0]:
+       
