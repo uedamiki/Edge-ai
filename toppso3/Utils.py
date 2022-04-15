@@ -346,4 +346,6 @@ def ReplaceTransTrajectorySegment(originaltranstraj, transtrajsegment, t0,t1):
     remchunk0 = Trajectory.Chunk(rem0, originaltranstraj.chunkslist[i0].polynomialsvector)
     newchunkslist.append(remchunk0)
 
-    ## insert 
+    ## insert transtrajsegment
+    for c in transtrajsegment.chunkslist:
+        newchunkslist
