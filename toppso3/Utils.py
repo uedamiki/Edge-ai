@@ -352,4 +352,5 @@ def ReplaceTransTrajectorySegment(originaltranstraj, transtrajsegment, t0,t1):
 
     ## remainderchunk1
     newpoly_list = []
-    for p in
+    for p in originaltranstraj.chunkslist[i1].polynomialsvector:
+        ## perform variable changin
