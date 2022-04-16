@@ -356,4 +356,6 @@ def ReplaceTransTrajectorySegment(originaltranstraj, transtrajsegment, t0,t1):
         ## perform variable changing of p(x) = a_n(x)^n + a_(n-1)(x)^(n-1) + ...
         ## by x = y + rem1
         
-        a = p.q ## coeff
+        a = p.q ## coefficient vector with python convention (highest degree first)
+        ## a is a poly1d object
+ 
