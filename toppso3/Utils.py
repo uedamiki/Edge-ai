@@ -371,4 +371,5 @@ def ReplaceTransTrajectorySegment(originaltranstraj, transtrajsegment, t0,t1):
     newchunkslist.append(remchunk1)
     
     ## insert remaining chunks
-    if i1 < l
+    if i1 < len(originaltranstraj.chunkslist) - 1:
+        for c in originaltranstraj.chunkslist[i1
