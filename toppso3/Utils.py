@@ -375,4 +375,9 @@ def ReplaceTransTrajectorySegment(originaltranstraj, transtrajsegment, t0,t1):
         for c in originaltranstraj.chunkslist[i1 + 1: len(originaltranstraj.chunkslist)]:
             newchunkslist.append(c)
 
-    return T
+    return Trajectory.PiecewisePolynomialTrajectory(newchunkslist)
+
+
+
+
+############################# 
