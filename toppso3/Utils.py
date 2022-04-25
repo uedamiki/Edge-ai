@@ -393,4 +393,5 @@ def CheckCollisionTraj(robot, trajectory, R_beg, checkcollisiontimestep = 1e-3):
         with robot:
             transformation = eye(4)
             transformation[0:3,0:3] = lie.EvalRotation(R_beg, traj, s)
-            robot.Se
+            robot.SetTransform(transformation)           
+            isincollision = (env.CheckC
