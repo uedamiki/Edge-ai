@@ -404,4 +404,8 @@ def CheckCollisionTraj(robot, trajectory, R_beg, checkcollisiontimestep = 1e-3):
         if (isincollision):
             return True
         else:
-      
+            return False
+
+
+
+############################# SHORTCUTING SO3 ###################
