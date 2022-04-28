@@ -408,4 +408,5 @@ def CheckCollisionTraj(robot, trajectory, R_beg, checkcollisiontimestep = 1e-3):
 
 
 
-############################# SHORTCUTING SO3 ###################
+############################# SHORTCUTING SO3 ############################
+def Shortcut(robot, taumax, vmax, lietraj,  maxiter, expectedduration = -1, 
