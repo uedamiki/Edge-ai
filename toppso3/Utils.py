@@ -426,3 +426,8 @@ def Shortcut(robot, taumax, vmax, lietraj,  maxiter, expectedduration = -1,  mea
         upperlimit = lietraj.duration
     else:
         dur = upperlimit
+    attempt = 0
+
+    ## for shortcutting
+    integrationtimestep = 1e-2            
+    reparamtime
