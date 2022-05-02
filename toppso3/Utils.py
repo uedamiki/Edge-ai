@@ -438,4 +438,10 @@ def Shortcut(robot, taumax, vmax, lietraj,  maxiter, expectedduration = -1,  mea
     constraintsstring += "\n" + ' '.join([str(v) for v in taumax])
     if not(inertia is None):
         for v in inertia:
-            constraintsstring += "\n" + ' '.join([str(i) for i in v
+            constraintsstring += "\n" + ' '.join([str(i) for i in v])
+
+    assert(dur > 10.0*discrtimestep)
+    
+
+    ncollision = 0
+    nnotretimable =
