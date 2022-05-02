@@ -444,4 +444,8 @@ def Shortcut(robot, taumax, vmax, lietraj,  maxiter, expectedduration = -1,  mea
     
 
     ncollision = 0
-    nnotretimable =
+    nnotretimable = 0 
+    nnotshorter = 0
+
+    for it in range(maxiter):
+        if tracki
