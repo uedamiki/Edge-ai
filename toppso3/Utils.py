@@ -450,4 +450,5 @@ def Shortcut(robot, taumax, vmax, lietraj,  maxiter, expectedduration = -1,  mea
     for it in range(maxiter):
         if trackingplot == 1:
             plt.scatter(it, lietraj.duration)
-         
+            plt.draw()
+        if (expectedduration > 0): # check, if newlietraj.duration
