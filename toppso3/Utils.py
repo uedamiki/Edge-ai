@@ -459,4 +459,8 @@ def Shortcut(robot, taumax, vmax, lietraj,  maxiter, expectedduration = -1,  mea
             print "[Utils::Shortcut] trajectory duration is less than discrtimestep.\n"
             break ## otherwise, this will cause an error in TOPP        
         
-        ## select an interval for shortcuttin
+        ## select an interval for shortcutting
+        t0 = random.rand()* dur
+        
+        if meanduration == 0:
+            meandura
