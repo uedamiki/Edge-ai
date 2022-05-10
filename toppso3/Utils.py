@@ -481,4 +481,7 @@ def Shortcut(robot, taumax, vmax, lietraj,  maxiter, expectedduration = -1,  mea
                 if (t1 < t0):
                     temp = t0
                     t0 = t1
-      
+                    t1 = temp
+                    T = t1 - t0
+
+        # print
