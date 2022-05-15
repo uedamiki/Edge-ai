@@ -511,4 +511,4 @@ def Shortcut(robot, taumax, vmax, lietraj,  maxiter, expectedduration = -1,  mea
                     
                     x.ReparameterizeTrajectory()
                     x.WriteResultTrajectory()
-                
+                    TOPPed_shortcuttraj = Trajectory.PiecewisePolynomialTrajectory.FromStr
