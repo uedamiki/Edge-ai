@@ -515,3 +515,5 @@ def Shortcut(robot, taumax, vmax, lietraj,  maxiter, expectedduration = -1,  mea
 
                     newlietraj = ReplaceTrajectorySegment(lietraj,TOPPed_shortcuttraj, t0, t1)  
                     lietraj = newlietraj
+                    dur = lietraj.duration
+                    #print "*********
