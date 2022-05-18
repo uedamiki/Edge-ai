@@ -523,4 +523,6 @@ def Shortcut(robot, taumax, vmax, lietraj,  maxiter, expectedduration = -1,  mea
                     #print "*******************************************"
                 else:
                     # print "Not shorter"
-      
+                    nnotshorter += 1
+            else: 
+                # print "Not
