@@ -519,4 +519,5 @@ def Shortcut(robot, taumax, vmax, lietraj,  maxiter, expectedduration = -1,  mea
                     #print "*******************************************"
                     print "Success at iteration",it + 1,":", t0, t1,"Deta_t:", t1 - t0 - x.resduration
                     attempt += 1
-                    #print "T:", nnotretimable, "; S:", nnotshorter , "; C:",
+                    #print "T:", nnotretimable, "; S:", nnotshorter , "; C:", ncollision , "; OK:", attempt
+                    #print "************************
