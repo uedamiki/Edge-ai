@@ -541,4 +541,5 @@ def Shortcut(robot, taumax, vmax, lietraj,  maxiter, expectedduration = -1,  mea
     return lietraj
 
 ################## REPLACE TRAJECTORY SEGMENT SO3 #############################
-def
+def ReplaceTrajectorySegment(originallietraj, trajsegment, t0, t1):
+    """ReplaceTrajector
