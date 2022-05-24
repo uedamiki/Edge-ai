@@ -547,4 +547,7 @@ def ReplaceTrajectorySegment(originallietraj, trajsegment, t0, t1):
     newtrajlist = []
     newRlist = []
     i0, rem0 = originallietraj.FindTrajIndex(t0)
-    i1, rem1 = originallietraj.FindTrajIndex(t1
+    i1, rem1 = originallietraj.FindTrajIndex(t1)
+
+    # print "t" , originallietraj.FindTrajIndex(t0) ##
+    # print "t" , origina
