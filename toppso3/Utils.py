@@ -546,4 +546,5 @@ def ReplaceTrajectorySegment(originallietraj, trajsegment, t0, t1):
     assert(t1 > t0)
     newtrajlist = []
     newRlist = []
-  
+    i0, rem0 = originallietraj.FindTrajIndex(t0)
+    i1, rem1 = originallietraj.FindTrajIndex(t1
