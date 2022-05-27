@@ -556,3 +556,5 @@ def ReplaceTrajectorySegment(originallietraj, trajsegment, t0, t1):
     ## if not, insert traj 0 to traj i0 - 1 into newtrajlist
     if i0 > 0:
         for i in range(0,i0):
+            newtrajlist.append(originallietraj.trajlist[i])
+            newRlist.append(origi
