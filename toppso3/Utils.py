@@ -557,4 +557,7 @@ def ReplaceTrajectorySegment(originallietraj, trajsegment, t0, t1):
     if i0 > 0:
         for i in range(0,i0):
             newtrajlist.append(originallietraj.trajlist[i])
-            newRlist.append(origi
+            newRlist.append(originallietraj.Rlist[i])
+    ## remaindertraj0
+    newchunkslist = []
+    ic0, remc0 = origin
