@@ -567,4 +567,7 @@ def ReplaceTrajectorySegment(originallietraj, trajsegment, t0, t1):
         for c in originallietraj.trajlist[i0].chunkslist[0: ic0]:
             newchunkslist.append(c)
           # remainderchunk0
-    remchunk0 = Trajectory.Chunk(remc0, originallietraj.trajlist[i0].ch
+    remchunk0 = Trajectory.Chunk(remc0, originallietraj.trajlist[i0].chunkslist[ic0].polynomialsvector)
+    newchunkslist.append(remchunk0)
+
+   
