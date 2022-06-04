@@ -571,4 +571,8 @@ def ReplaceTrajectorySegment(originallietraj, trajsegment, t0, t1):
     newchunkslist.append(remchunk0)
 
     remtraj0 = Trajectory.PiecewisePolynomialTrajectory(newchunkslist) 
-    newt
+    newtrajlist.append(remtraj0)
+    newRlist.append(originallietraj.Rlist[i0])
+
+
+    ## insert trajs
