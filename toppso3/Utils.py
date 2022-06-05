@@ -575,4 +575,6 @@ def ReplaceTrajectorySegment(originallietraj, trajsegment, t0, t1):
     newRlist.append(originallietraj.Rlist[i0])
 
 
-    ## insert trajs
+    ## insert trajsegment
+    newtrajlist.append(trajsegment)
+    newRlist.append(originallietraj.EvalRotati
