@@ -577,4 +577,8 @@ def ReplaceTrajectorySegment(originallietraj, trajsegment, t0, t1):
 
     ## insert trajsegment
     newtrajlist.append(trajsegment)
-    newRlist.append(originallietraj.EvalRotati
+    newRlist.append(originallietraj.EvalRotation(t0))
+
+
+######################################
+    ## For the traj right aft
