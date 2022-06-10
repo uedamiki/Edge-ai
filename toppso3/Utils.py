@@ -591,4 +591,7 @@ def ReplaceTrajectorySegment(originallietraj, trajsegment, t0, t1):
         ## by x = y + remc1
         
         a = p.q ## coefficient vector with python convention (highest degree first)
-      
+        ## a is a poly1d object
+        r = a.r ## polynomial roots
+        for i in range(len(r)):
+   
