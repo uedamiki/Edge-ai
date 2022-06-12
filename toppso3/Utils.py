@@ -595,4 +595,6 @@ def ReplaceTrajectorySegment(originallietraj, trajsegment, t0, t1):
         r = a.r ## polynomial roots
         for i in range(len(r)):
             r[i] = r[i] - remc1
-        b = np.poly1d(r, True) ## reconstruct a new polynomial 
+        b = np.poly1d(r, True) ## reconstruct a new polynomial from roots
+        ## b is a poly1d object
+        b = b*a.coeffs[0] ## multiply back by a_n ***
