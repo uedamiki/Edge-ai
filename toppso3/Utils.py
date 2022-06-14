@@ -601,3 +601,4 @@ def ReplaceTrajectorySegment(originallietraj, trajsegment, t0, t1):
         
         newpoly = Trajectory.Polynomial(b.coeffs.tolist()[::-1]) ## TOPP convention is weak-term-first
         newpoly_list.append(newpoly)
+    remchunk1 = Trajectory.Chunk(originallietraj.trajlist[i1].chunkslist[ic1].durati
