@@ -617,4 +617,5 @@ def ReplaceTrajectorySegment(originallietraj, trajsegment, t0, t1):
     # insert the remainder trajectoris
     if i1 < len(originallietraj.trajlist)-1:
         Rindex = i1+1
-   
+        for t in originallietraj.trajlist[i1+1: len(originallietraj.trajlist)]:
+      
