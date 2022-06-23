@@ -620,4 +620,12 @@ def ReplaceTrajectorySegment(originallietraj, trajsegment, t0, t1):
         for t in originallietraj.trajlist[i1+1: len(originallietraj.trajlist)]:
             newtrajlist.append(t)
             newRlist.append(originallietraj.Rlist[Rindex])
-     
+            Rindex += 1
+ 
+    return lie.LieTraj(newRlist, newtrajlist)
+
+
+
+
+
+###################
