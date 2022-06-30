@@ -638,4 +638,5 @@ def TrajStringFromTrajList(trajlist):
     return trajectorystring
 
 ########################## SAVE LIETRAJ as TEXT_FILEs ################################
-## return 
+## return 2 files: Rlistfilename.txt and trajlistfilename.txt
+def SaveLietrajAsTextFiles(lietraj, RlistFilenam
