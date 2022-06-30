@@ -639,4 +639,7 @@ def TrajStringFromTrajList(trajlist):
 
 ########################## SAVE LIETRAJ as TEXT_FILEs ################################
 ## return 2 files: Rlistfilename.txt and trajlistfilename.txt
-def SaveLietrajAsTextFiles(lietraj, RlistFilenam
+def SaveLietrajAsTextFiles(lietraj, RlistFilename, trajlistFilename):
+    ## Save Rlist
+    txtRlist = ""
+    for i in range(len(lietraj.Rlist
