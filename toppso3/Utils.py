@@ -645,4 +645,7 @@ def SaveLietrajAsTextFiles(lietraj, RlistFilename, trajlistFilename):
     for i in range(len(lietraj.Rlist)):
         temp = lietraj.Rlist[i]
         for row in range(0,3):
-            separator = "
+            separator = ""
+            for col in range(0,3):
+                txtRlist += separator
+               
