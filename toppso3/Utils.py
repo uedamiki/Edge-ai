@@ -661,4 +661,7 @@ def SaveLietrajAsTextFiles(lietraj, RlistFilename, trajlistFilename):
         txttrajlist += "\n"
     with open(trajlistFilename,"wt") as file:
         file.write(txttrajlist)
-    ## if saved successfully, return true. If not, return false and not
+    ## if saved successfully, return true. If not, return false and notify
+    return True
+
+######### READ Rlistfilename.txt and trajl
