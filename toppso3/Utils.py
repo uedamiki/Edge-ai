@@ -664,4 +664,5 @@ def SaveLietrajAsTextFiles(lietraj, RlistFilename, trajlistFilename):
     ## if saved successfully, return true. If not, return false and notify
     return True
 
-######### READ Rlistfilename.txt and trajl
+######### READ Rlistfilename.txt and trajlistfilename.txt and RETURN a LIETRAJ ######
+def ReadLieTrajFiles(Rlistfilename, trajlistfilename):
