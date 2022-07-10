@@ -666,3 +666,6 @@ def SaveLietrajAsTextFiles(lietraj, RlistFilename, trajlistFilename):
 
 ######### READ Rlistfilename.txt and trajlistfilename.txt and RETURN a LIETRAJ ######
 def ReadLieTrajFiles(Rlistfilename, trajlistfilename):
+    ## Read Rlist
+    with open(Rlistfilename, 'r') as file:
+        data_Rlists
