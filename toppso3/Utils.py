@@ -670,4 +670,6 @@ def ReadLieTrajFiles(Rlistfilename, trajlistfilename):
     with open(Rlistfilename, 'r') as file:
         data_Rliststring = file.read()
     list = [float(x) for x in data_Rliststring.split()]
-    
+    n = len(list)/9
+    if (n==0):
+        print "\033[91mWRONG DATA, RECHECK ", Rlistfilen
