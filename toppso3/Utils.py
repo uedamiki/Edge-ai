@@ -677,4 +677,6 @@ def ReadLieTrajFiles(Rlistfilename, trajlistfilename):
     Rlist = []
     for i in range(n):
         temp = array([[list[i*9+0], list[i*9+1], list[i*9+2]],
-                      [list[i*9+3], list[i*9+4], list[i*9+5
+                      [list[i*9+3], list[i*9+4], list[i*9+5]],
+                      [list[i*9+6], list[i*9+7], list[i*9+8]]])
+        Rlist.appe
