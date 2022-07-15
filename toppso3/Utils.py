@@ -685,4 +685,7 @@ def ReadLieTrajFiles(Rlistfilename, trajlistfilename):
     with open(trajlistfilename, 'r') as file:
         data_trajliststring = file.read()
     buff = StringIO.StringIO(data_trajliststring)
-    trajlist
+    trajlist = []
+    trajstringlist = []
+    temptrajstring = ""
+    temp = buff.readline() # ing
