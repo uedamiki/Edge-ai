@@ -699,4 +699,8 @@ def ReadLieTrajFiles(Rlistfilename, trajlistfilename):
     trajstringlist.append(temptrajstring) # add the last trajstring
     for t_str in trajstringlist:
         traj = Trajectory.PiecewisePolynomialTrajectory.FromString(t_str)
-        trajlist.append(tra
+        trajlist.append(traj)
+
+    return  lie.LieTraj(Rlist, trajlist)
+
+################### SAVE SE3 traj###############
