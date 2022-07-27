@@ -718,4 +718,7 @@ def SaveSE3trajAsTextFiles(se3traj, rlist, rlistFilename, se3listFilename):
                 separator = " "
             txtrlist += "\n"
     with open(rlistFilename,"wt") as file:
-        file.write(tx
+        file.write(txtrlist)
+    ## Save se3list
+    txtse3trajlist = ""
+    for i in range(len(s
