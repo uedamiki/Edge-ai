@@ -727,4 +727,8 @@ def SaveSE3trajAsTextFiles(se3traj, rlist, rlistFilename, se3listFilename):
         txtse3trajlist += "\n"
     with open(se3listFilename,"wt") as file:
         file.write(txtse3trajlist)
-    ## i
+    ## if saved successfully, return true. If not, return false and notify
+    return True
+
+
+######### READ
