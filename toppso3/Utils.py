@@ -731,4 +731,5 @@ def SaveSE3trajAsTextFiles(se3traj, rlist, rlistFilename, se3listFilename):
     return True
 
 
-######### READ
+######### READ rlistFilename.txt and se3trajFilename.txt and RETURN a SE3TRAJ ######
+def ReadSE3TrajFiles(rlistfil
