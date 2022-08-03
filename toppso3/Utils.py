@@ -734,4 +734,6 @@ def SaveSE3trajAsTextFiles(se3traj, rlist, rlistFilename, se3listFilename):
 ######### READ rlistFilename.txt and se3trajFilename.txt and RETURN a SE3TRAJ ######
 def ReadSE3TrajFiles(rlistfilename, se3trajfilename):
     ## Read rlist
-    with open(rlistfilename, 'r') as
+    with open(rlistfilename, 'r') as file:
+        data_rliststring = file.read()
+    list = [float(x) for x in data_rliststring.spl
