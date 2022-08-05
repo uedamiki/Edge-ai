@@ -739,4 +739,8 @@ def ReadSE3TrajFiles(rlistfilename, se3trajfilename):
     list = [float(x) for x in data_rliststring.split()]
     n = len(list)/9
     if (n==0):
-        print "\033[91mWRONG DATA, RECHECK ", rlistfi
+        print "\033[91mWRONG DATA, RECHECK ", rlistfilename, " file!!!\033[0m" 
+
+    rlist = []
+    for i in range(n):
+        
