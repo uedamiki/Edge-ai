@@ -748,4 +748,6 @@ def ReadSE3TrajFiles(rlistfilename, se3trajfilename):
                       [list[i*9+6], list[i*9+7], list[i*9+8]]])
         rlist.append(temp)
 
- 
+    ## Read trajlist
+    with open(se3trajfilename, 'r') as file:
+        data_se3trajliststr
