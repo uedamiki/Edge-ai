@@ -752,4 +752,7 @@ def ReadSE3TrajFiles(rlistfilename, se3trajfilename):
     with open(se3trajfilename, 'r') as file:
         data_se3trajliststring = file.read()
     buff = StringIO.StringIO(data_se3trajliststring)
-    se3traj
+    se3trajlist = []
+    se3trajstringlist = []
+    tempse3trajstring = ""
+    temp = bu
