@@ -750,4 +750,6 @@ def ReadSE3TrajFiles(rlistfilename, se3trajfilename):
 
     ## Read trajlist
     with open(se3trajfilename, 'r') as file:
-        data_se3trajliststr
+        data_se3trajliststring = file.read()
+    buff = StringIO.StringIO(data_se3trajliststring)
+    se3traj
