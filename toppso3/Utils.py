@@ -767,4 +767,7 @@ def ReadSE3TrajFiles(rlistfilename, se3trajfilename):
     for t_str in se3trajstringlist:
         se3traj = Trajectory.PiecewisePolynomialTrajectory.FromString(t_str)
         se3trajlist.append(se3traj)
-    se3traj = Trajectory.PiecewisePolynomialTrajectory.FromString(TrajS
+    se3traj = Trajectory.PiecewisePolynomialTrajectory.FromString(TrajStringFromTrajList(se3trajlist))
+    return  se3traj, rlist
+
+########
