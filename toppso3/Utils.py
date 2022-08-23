@@ -770,4 +770,5 @@ def ReadSE3TrajFiles(rlistfilename, se3trajfilename):
     se3traj = Trajectory.PiecewisePolynomialTrajectory.FromString(TrajStringFromTrajList(se3trajlist))
     return  se3traj, rlist
 
-########
+#########################PLOT SE3 ###################################
+def PlotSE3(se3traj, rl
