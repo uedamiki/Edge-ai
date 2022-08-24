@@ -771,4 +771,5 @@ def ReadSE3TrajFiles(rlistfilename, se3trajfilename):
     return  se3traj, rlist
 
 #########################PLOT SE3 ###################################
-def PlotSE3(se3traj, rl
+def PlotSE3(se3traj, rlist,  dt = 0.01, figstart=0,vmax=[],accelmax=[],taumax=[],fmax=[], inertia = None, m = None):
+    t
