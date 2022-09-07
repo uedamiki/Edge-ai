@@ -788,4 +788,6 @@ def PlotSE3(se3traj, rlist,  dt = 0.01, figstart=0,vmax=[],accelmax=[],taumax=[]
     ylabel('Translation velocities (m/s)')
     xlabel('Time (s)')
     for v in vmax[:3]:
-        plt.plot([0, transtraj.duration],[v
+        plt.plot([0, transtraj.duration],[v, v], '-.',color = 'k')
+    for v in vmax[:3]:
+        plt.plot([0, transtraj.duration
