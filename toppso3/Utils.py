@@ -790,4 +790,8 @@ def PlotSE3(se3traj, rlist,  dt = 0.01, figstart=0,vmax=[],accelmax=[],taumax=[]
     for v in vmax[:3]:
         plt.plot([0, transtraj.duration],[v, v], '-.',color = 'k')
     for v in vmax[:3]:
-        plt.plot([0, transtraj.duration
+        plt.plot([0, transtraj.duration],[-v, -v], '-.',color = 'k')
+
+    figure(figstart+4)
+    clf()
+    qddvect = array([
