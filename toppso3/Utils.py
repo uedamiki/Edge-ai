@@ -797,4 +797,7 @@ def PlotSE3(se3traj, rlist,  dt = 0.01, figstart=0,vmax=[],accelmax=[],taumax=[]
     qddvect = array([transtraj.Evaldd(t) for t in tvect])
     plt.plot(tvect, qddvect[:,0], '--', label = r'$f^1$',linewidth=2)
     plt.plot(tvect, qddvect[:,1], '-.', label = r'$f^2$',linewidth=2)
-    plt.plot(tvect, qddv
+    plt.plot(tvect, qddvect[:,2], '-', label = r'$f^3$',linewidth=2)
+    plt.legend()
+    ylabel('Forces (N)')
+    x
