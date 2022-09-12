@@ -800,4 +800,6 @@ def PlotSE3(se3traj, rlist,  dt = 0.01, figstart=0,vmax=[],accelmax=[],taumax=[]
     plt.plot(tvect, qddvect[:,2], '-', label = r'$f^3$',linewidth=2)
     plt.legend()
     ylabel('Forces (N)')
-    x
+    xlabel('Time (s)')
+    for v in fmax[:3]:
+        plt.plot([0, transtraj.duration],[v,
