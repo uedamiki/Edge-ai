@@ -806,4 +806,6 @@ def PlotSE3(se3traj, rlist,  dt = 0.01, figstart=0,vmax=[],accelmax=[],taumax=[]
     for v in fmax[:3]:
         plt.plot([0, transtraj.duration],[-v, -v], '-.',color = 'k')
 
-###########################CheckIntersection #####
+###########################CheckIntersection ##########################
+def CheckIntersection(interval0, interval1):
+    """CheckInt
