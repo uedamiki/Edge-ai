@@ -18,4 +18,9 @@ Eps[0,1,2] = 1
 Eps[1,0,2] = -1
 Eps[1,2,0] = 1
 Eps[2,1,0] = -1
-Eps[2,0,1]
+Eps[2,0,1] = 1
+
+
+class LieTraj():
+    def __init__(self, Rlist,trajlist):
+        self.Rlist = Rlis
