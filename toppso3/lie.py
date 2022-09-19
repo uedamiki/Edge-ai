@@ -12,4 +12,10 @@ import matplotlib.pyplot as plt
 
 
 
-Eps = zeros((3,3,
+Eps = zeros((3,3,3))
+Eps[0,2,1] = -1
+Eps[0,1,2] = 1
+Eps[1,0,2] = -1
+Eps[1,2,0] = 1
+Eps[2,1,0] = -1
+Eps[2,0,1]
