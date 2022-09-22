@@ -26,4 +26,6 @@ class LieTraj():
         self.Rlist = Rlist
         self.trajlist = trajlist
         self.duration = 0
-        self.trajcum
+        self.trajcumulateddurationslist = []
+        for t in trajlist:
+            self.trajcumulatedduratio
