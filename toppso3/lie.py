@@ -28,4 +28,8 @@ class LieTraj():
         self.duration = 0
         self.trajcumulateddurationslist = []
         for t in trajlist:
-            self.trajcumulatedduratio
+            self.trajcumulateddurationslist.append(self.duration)
+            self.duration += t.duration
+
+    def FindTrajIndex(self, s):
+  
