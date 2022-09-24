@@ -34,4 +34,8 @@ class LieTraj():
     def FindTrajIndex(self, s):
         if s == 0:
             s = 1e-10
-        i = bisect.bisect_left(self.trajcumulatedduratio
+        i = bisect.bisect_left(self.trajcumulateddurationslist, s) - 1
+        remainder = s - self.trajcumulateddurationslist[i]
+        return i, remainder
+
+    
