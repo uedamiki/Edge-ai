@@ -38,4 +38,6 @@ class LieTraj():
         remainder = s - self.trajcumulateddurationslist[i]
         return i, remainder
 
-    
+    # Rotation
+    def EvalRotation(self,s):
+        i, remainder = self.FindTrajInde
