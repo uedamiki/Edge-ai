@@ -40,4 +40,7 @@ class LieTraj():
 
     # Rotation
     def EvalRotation(self,s):
-        i, remainder = self.FindTrajInde
+        i, remainder = self.FindTrajIndex(s)
+        return(dot(self.Rlist[i],expmat(self.trajlist[i].Eval(remainder))))
+
+    # V
