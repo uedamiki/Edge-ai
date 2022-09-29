@@ -43,4 +43,7 @@ class LieTraj():
         i, remainder = self.FindTrajIndex(s)
         return(dot(self.Rlist[i],expmat(self.trajlist[i].Eval(remainder))))
 
-    # V
+    # Velocity in body frame
+    def EvalOmega(self,s):
+        i, remainder = self.FindTrajIndex(s)
+       
