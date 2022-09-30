@@ -48,4 +48,8 @@ class LieTraj():
         i, remainder = self.FindTrajIndex(s)
         r = self.trajlist[i].Eval(remainder)
         rd = self.trajlist[i].Evald(remainder)
-        return dot(Am
+        return dot(Amat(r),rd)
+
+    # Acceleration in body frame
+    def EvalAlpha(self,s):
+      
