@@ -53,4 +53,6 @@ class LieTraj():
     # Acceleration in body frame
     def EvalAlpha(self,s):
         i, remainder = self.FindTrajIndex(s)
-        r = self.trajlist[i].Eval(remainde
+        r = self.trajlist[i].Eval(remainder)
+        rd = self.trajlist[i].Evald(remainder)
+        rdd = self.trajlist[i].Evaldd(remainde
