@@ -58,4 +58,6 @@ class LieTraj():
         rdd = self.trajlist[i].Evaldd(remainder)
         return dot(Bmat(r),rdd) + dot(rd,tensordot(Ctensor(r),rd,([2],[0])))
 
-    # To
+    # Torques
+    def EvalTorques(self,s,I):
+        i, remainder = self.FindTrajI
