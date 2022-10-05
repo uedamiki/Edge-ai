@@ -55,4 +55,7 @@ class LieTraj():
         i, remainder = self.FindTrajIndex(s)
         r = self.trajlist[i].Eval(remainder)
         rd = self.trajlist[i].Evald(remainder)
-        rdd = self.trajlist[i].Evaldd(remainde
+        rdd = self.trajlist[i].Evaldd(remainder)
+        return dot(Bmat(r),rdd) + dot(rd,tensordot(Ctensor(r),rd,([2],[0])))
+
+    # To
