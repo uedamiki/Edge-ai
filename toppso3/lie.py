@@ -60,4 +60,6 @@ class LieTraj():
 
     # Torques
     def EvalTorques(self,s,I):
-        i, remainder = self.FindTrajI
+        i, remainder = self.FindTrajIndex(s)
+        r = self.trajlist[i].Eval(remainder)
+        rd = self.trajlist[i].Evald(r
