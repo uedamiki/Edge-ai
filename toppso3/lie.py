@@ -65,4 +65,5 @@ class LieTraj():
         rd = self.trajlist[i].Evald(remainder)
         rdd = self.trajlist[i].Evaldd(remainder)
         omega = dot(Amat(r),rd)
-   
+        alpha =  dot(Bmat(r),rdd) + dot(rd,tensordot(Ctensor(r),rd,([2],[0])))
+        return dot(I,alpha) + 
