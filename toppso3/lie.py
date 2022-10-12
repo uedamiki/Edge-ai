@@ -66,4 +66,9 @@ class LieTraj():
         rdd = self.trajlist[i].Evaldd(remainder)
         omega = dot(Amat(r),rd)
         alpha =  dot(Bmat(r),rdd) + dot(rd,tensordot(Ctensor(r),rd,([2],[0])))
-        return dot(I,alpha) + 
+        return dot(I,alpha) + cross(omega,dot(I,omega))
+
+    
+    def Plot(self,dt=0.01,figstart=0,vmax=[],accelmax=[],taumax=[],I=None):
+
+        
