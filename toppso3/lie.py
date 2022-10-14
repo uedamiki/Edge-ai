@@ -75,4 +75,6 @@ class LieTraj():
         omegavect = array([self.EvalOmega(t) for t in tvect])
         figure(figstart)
         clf()
+        
+        plt.plot(tvect,omegavect[:,0],'--',label = '$\omega^1$',linewidth = 2)
       
