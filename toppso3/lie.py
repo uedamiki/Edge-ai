@@ -72,4 +72,7 @@ class LieTraj():
     def Plot(self,dt=0.01,figstart=0,vmax=[],accelmax=[],taumax=[],I=None):
 
         tvect = arange(0, self.duration + dt, dt)
-        omegavect = array([self.EvalOmeg
+        omegavect = array([self.EvalOmega(t) for t in tvect])
+        figure(figstart)
+        clf()
+      
