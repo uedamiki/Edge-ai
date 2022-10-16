@@ -77,4 +77,5 @@ class LieTraj():
         clf()
         
         plt.plot(tvect,omegavect[:,0],'--',label = '$\omega^1$',linewidth = 2)
-      
+        plt.plot(tvect,omegavect[:,1],'-.',label = '$\omega^2$',linewidth = 2)
+        p
