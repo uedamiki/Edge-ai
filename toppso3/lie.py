@@ -78,4 +78,5 @@ class LieTraj():
         
         plt.plot(tvect,omegavect[:,0],'--',label = '$\omega^1$',linewidth = 2)
         plt.plot(tvect,omegavect[:,1],'-.',label = '$\omega^2$',linewidth = 2)
-        p
+        plt.plot(tvect,omegavect[:,2],'-',label ='$\omega^3$',linewidth = 2)
+        plt.legend()
