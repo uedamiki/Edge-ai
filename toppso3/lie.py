@@ -80,3 +80,6 @@ class LieTraj():
         plt.plot(tvect,omegavect[:,1],'-.',label = '$\omega^2$',linewidth = 2)
         plt.plot(tvect,omegavect[:,2],'-',label ='$\omega^3$',linewidth = 2)
         plt.legend()
+        for v in vmax:
+            plt.plot([0, self.duration],[v, v], '-.',color = 'k')
+        fo
