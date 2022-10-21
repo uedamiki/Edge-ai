@@ -82,4 +82,6 @@ class LieTraj():
         plt.legend()
         for v in vmax:
             plt.plot([0, self.duration],[v, v], '-.',color = 'k')
-        fo
+        for v in vmax:
+            plt.plot([0, self.duration],[-v, -v], '-.',color = 'k')
+        yla
