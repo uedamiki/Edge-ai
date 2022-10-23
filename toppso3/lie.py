@@ -84,4 +84,7 @@ class LieTraj():
             plt.plot([0, self.duration],[v, v], '-.',color = 'k')
         for v in vmax:
             plt.plot([0, self.duration],[-v, -v], '-.',color = 'k')
-        yla
+        ylabel('Angular velocities (rad/s)')
+        xlabel('Time (s)')
+
+        alphavect = array
