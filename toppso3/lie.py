@@ -87,4 +87,6 @@ class LieTraj():
         ylabel('Angular velocities (rad/s)')
         xlabel('Time (s)')
 
-        alphavect = array
+        alphavect = array([self.EvalAlpha(t) for t in tvect])
+        figure(figstart+1)
+        clf()
