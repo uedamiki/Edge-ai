@@ -90,3 +90,5 @@ class LieTraj():
         alphavect = array([self.EvalAlpha(t) for t in tvect])
         figure(figstart+1)
         clf()
+        plt.plot(tvect,alphavect[:,0],'--',label = '$\dot \omega^1$',linewidth = 2)
+       
