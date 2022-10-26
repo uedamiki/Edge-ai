@@ -91,4 +91,5 @@ class LieTraj():
         figure(figstart+1)
         clf()
         plt.plot(tvect,alphavect[:,0],'--',label = '$\dot \omega^1$',linewidth = 2)
-       
+        plt.plot(tvect,alphavect[:,1],'-.',label = '$\dot \omega^2$',linewidth = 2)
+ 
