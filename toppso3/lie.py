@@ -93,4 +93,6 @@ class LieTraj():
         plt.plot(tvect,alphavect[:,0],'--',label = '$\dot \omega^1$',linewidth = 2)
         plt.plot(tvect,alphavect[:,1],'-.',label = '$\dot \omega^2$',linewidth = 2)
         plt.plot(tvect,alphavect[:,2],'-',label = '$\dot \omega^3$',linewidth = 2)      
-        
+        plt.legend()
+        for a in accelmax:
+            plt.plot([0, self.duration],[a, a],
