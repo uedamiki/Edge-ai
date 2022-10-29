@@ -97,4 +97,6 @@ class LieTraj():
         for a in accelmax:
             plt.plot([0, self.duration],[a, a], '-.',color = 'k')
         for a in accelmax:
-            plt.plot([0, self.duration],[-
+            plt.plot([0, self.duration],[-a, -a], '-.',color = 'k')
+        ylabel('Angular accelerations (rad/s^2)')
+        xlabel('Tim
