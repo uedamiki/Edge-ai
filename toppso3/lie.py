@@ -99,4 +99,7 @@ class LieTraj():
         for a in accelmax:
             plt.plot([0, self.duration],[-a, -a], '-.',color = 'k')
         ylabel('Angular accelerations (rad/s^2)')
-        xlabel('Tim
+        xlabel('Time (s)')
+
+        if not(I is None):
+            torquesvect = array([self.EvalTorques(t,I) for t in tvect])
