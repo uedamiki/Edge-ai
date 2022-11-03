@@ -103,3 +103,6 @@ class LieTraj():
 
         if not(I is None):
             torquesvect = array([self.EvalTorques(t,I) for t in tvect])
+            figure(figstart+2)
+            clf()
+            plt.plot(tvect,torquesvect[:,0],'--',l
