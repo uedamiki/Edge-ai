@@ -105,4 +105,5 @@ class LieTraj():
             torquesvect = array([self.EvalTorques(t,I) for t in tvect])
             figure(figstart+2)
             clf()
-            plt.plot(tvect,torquesvect[:,0],'--',l
+            plt.plot(tvect,torquesvect[:,0],'--',label = r'$\tau^1$',linewidth = 2)
+            plt.plot(tvect,torquesvect[:,1],'-.',
