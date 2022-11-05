@@ -107,4 +107,7 @@ class LieTraj():
             clf()
             plt.plot(tvect,torquesvect[:,0],'--',label = r'$\tau^1$',linewidth = 2)
             plt.plot(tvect,torquesvect[:,1],'-.',label = r'$\tau^2$',linewidth = 2)
-            plt.plot(tvect,torquesvect[:,2],'-'
+            plt.plot(tvect,torquesvect[:,2],'-',label = r'$\tau^3$',linewidth = 2)
+            plt.legend()
+            
+            for 
