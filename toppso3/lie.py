@@ -112,4 +112,5 @@ class LieTraj():
             
             for tau in taumax:
                 plt.plot([0, self.duration],[tau, tau], '-.',color = 'k')
- 
+            for tau in taumax:
+                plt.plot([0, self.duration],[-tau, -tau], '-.',co
