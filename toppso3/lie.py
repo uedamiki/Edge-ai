@@ -110,4 +110,6 @@ class LieTraj():
             plt.plot(tvect,torquesvect[:,2],'-',label = r'$\tau^3$',linewidth = 2)
             plt.legend()
             
-            for 
+            for tau in taumax:
+                plt.plot([0, self.duration],[tau, tau], '-.',color = 'k')
+ 
