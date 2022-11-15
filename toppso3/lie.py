@@ -117,4 +117,8 @@ class LieTraj():
             ylabel('Torques (N.m)')
             xlabel('Time (s)')
         
-d
+def SplitTraj(Rlist,traj):
+    trajlist = []
+    chunkindex = 0
+    clist = []
+    for i in range(len(Rlist)-
