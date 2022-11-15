@@ -121,4 +121,6 @@ def SplitTraj(Rlist,traj):
     trajlist = []
     chunkindex = 0
     clist = []
-    for i in range(len(Rlist)-
+    for i in range(len(Rlist)-1):
+        while chunkindex <  len(traj.chunkslist):
+            chunkcur = traj.chunkslist[chun
