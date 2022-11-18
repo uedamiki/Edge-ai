@@ -125,4 +125,6 @@ def SplitTraj(Rlist,traj):
         while chunkindex <  len(traj.chunkslist):
             chunkcur = traj.chunkslist[chunkindex]
             chunknext = traj.chunkslist[chunkindex+1]
-            clist.append(chunkcu
+            clist.append(chunkcur)
+            chunkindex += 1
+            if(norm(dot(Rlist[i],expmat(chunkcur.Eva
