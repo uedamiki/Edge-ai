@@ -137,4 +137,8 @@ def SplitTraj(Rlist,traj):
         clist.append(traj.chunkslist[chunkindex])
         chunkindex += 1
     trajlist.append(Trajectory.PiecewisePolynomialTrajectory(clist))
+        
+    return LieTraj(Rlist,trajlist)
       
+def SplitTraj2(Rlist,traj): 
+    trajlist = []
