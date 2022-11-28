@@ -142,3 +142,7 @@ def SplitTraj(Rlist,traj):
       
 def SplitTraj2(Rlist,traj): 
     trajlist = []
+    chunkindex = 0
+    clist = []
+    for i in range(len(Rlist)-1):
+        while chunki
