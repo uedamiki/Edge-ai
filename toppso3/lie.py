@@ -152,4 +152,5 @@ def SplitTraj2(Rlist,traj):
             clist.append(chunkcur)
             chunkindex += 1
             if(norm(dot(Rlist[i],expmat(chunkcur.Eval(chunkcur.duration)))-dot(Rlist[i+1],expmat(chunknext.Eval(0)))))< 1e-1:
-                trajl
+                trajlist.append(Trajectory.PiecewisePolynomialTrajectory(clist))
+                clist = []
