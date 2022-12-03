@@ -157,4 +157,7 @@ def SplitTraj2(Rlist,traj):
                 break
     # Last traj
     clist = []
-    while chunkindex < len(traj.chunkslis
+    while chunkindex < len(traj.chunkslist):
+        clist.append(traj.chunkslist[chunkindex])
+        chunkindex += 1
+    trajlist.a
