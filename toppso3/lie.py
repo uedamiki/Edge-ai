@@ -162,4 +162,8 @@ def SplitTraj2(Rlist,traj):
         chunkindex += 1
     trajlist.append(Trajectory.PiecewisePolynomialTrajectory(clist))
         
-    return LieTraj(Rlis
+    return LieTraj(Rlist,trajlist)
+
+
+def skewfromvect(r):
+    return array([[0,-r[2],r[1]],[r[2],0,-r[0]],[-r[
