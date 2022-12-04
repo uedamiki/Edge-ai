@@ -160,4 +160,6 @@ def SplitTraj2(Rlist,traj):
     while chunkindex < len(traj.chunkslist):
         clist.append(traj.chunkslist[chunkindex])
         chunkindex += 1
-    trajlist.a
+    trajlist.append(Trajectory.PiecewisePolynomialTrajectory(clist))
+        
+    return LieTraj(Rlis
