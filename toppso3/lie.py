@@ -171,4 +171,8 @@ def skewfromvect(r):
 def vectfromskew(R):
     return array([R[2,1],R[0,2],R[1,0]])
 
-def expm
+def expmat(r):
+    nr = linalg.norm(r)
+    if(nr<=1e-10):
+        return eye(3)
+    R = skewf
