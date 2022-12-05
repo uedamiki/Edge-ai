@@ -166,4 +166,9 @@ def SplitTraj2(Rlist,traj):
 
 
 def skewfromvect(r):
-    return array([[0,-r[2],r[1]],[r[2],0,-r[0]],[-r[
+    return array([[0,-r[2],r[1]],[r[2],0,-r[0]],[-r[1],r[0],0]])
+
+def vectfromskew(R):
+    return array([R[2,1],R[0,2],R[1,0]])
+
+def expm
