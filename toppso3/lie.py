@@ -178,4 +178,7 @@ def expmat(r):
     R = skewfromvect(r)
     return eye(3) + sin(nr)/nr*R + (1-cos(nr))/(nr*nr)*dot(R,R)
 
-def logvect
+def logvect(R):
+    if(abs(trace(R)+1)>1e-10):
+        if(linalg.norm(R-eye(3))<=1e-10):
+      
