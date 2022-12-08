@@ -181,4 +181,7 @@ def expmat(r):
 def logvect(R):
     if(abs(trace(R)+1)>1e-10):
         if(linalg.norm(R-eye(3))<=1e-10):
-      
+            return zeros(3)
+        else:
+            phi = arccos((trace(R)-1)/2)
+            return vect
