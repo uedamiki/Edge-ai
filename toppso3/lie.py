@@ -184,4 +184,6 @@ def logvect(R):
             return zeros(3)
         else:
             phi = arccos((trace(R)-1)/2)
-            return vect
+            return vectfromskew(phi/(2*sin(phi))*(R-R.T))
+    else:
+        eig
