@@ -188,4 +188,7 @@ def logvect(R):
     else:
         eigval, eigvect = linalg.eig(R)
         for (i,val) in enumerate(eigval):
-        
+            if abs((val-1)) <= 1e-10:
+                return pi*real(eigvect[:,i])
+                
+def Am
