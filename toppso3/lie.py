@@ -191,4 +191,8 @@ def logvect(R):
             if abs((val-1)) <= 1e-10:
                 return pi*real(eigvect[:,i])
                 
-def Am
+def Amat(r):
+    nr = linalg.norm(r)
+    if(nr<=1e-10):
+        return eye(3)
+    R = skewfromvect(r)
