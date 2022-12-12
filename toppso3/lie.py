@@ -196,3 +196,6 @@ def Amat(r):
     if(nr<=1e-10):
         return eye(3)
     R = skewfromvect(r)
+    return eye(3) - (1-cos(nr))/(nr*nr)*R + (nr-sin(nr))/(nr*nr*nr)*dot(R,R)
+
+def Bmat0(
