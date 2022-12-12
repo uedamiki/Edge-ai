@@ -198,4 +198,7 @@ def Amat(r):
     R = skewfromvect(r)
     return eye(3) - (1-cos(nr))/(nr*nr)*R + (nr-sin(nr))/(nr*nr*nr)*dot(R,R)
 
-def Bmat0(
+def Bmat0(r):
+    nr = linalg.norm(r)
+    R = skewfromvect(r)
+    return eye(3) + (1-cos(nr))
