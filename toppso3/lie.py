@@ -205,4 +205,7 @@ def Bmat0(r):
 
 def Bmat(r):
     nr = linalg.norm(r)
-    R = sk
+    R = skewfromvect(r)
+    return eye(3) - (1-cos(nr))/(nr*nr)*R + (nr-sin(nr))/(nr*nr*nr)*dot(R,R)
+
+def Ct
