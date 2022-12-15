@@ -208,4 +208,9 @@ def Bmat(r):
     R = skewfromvect(r)
     return eye(3) - (1-cos(nr))/(nr*nr)*R + (nr-sin(nr))/(nr*nr*nr)*dot(R,R)
 
-def Ct
+def Ctensor(r):
+    nr = linalg.norm(r)
+    nr2 = nr*nr
+    nr3 = nr2*nr
+    nr4 = nr3*nr
+    nr5 =
