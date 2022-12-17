@@ -213,4 +213,7 @@ def Ctensor(r):
     nr2 = nr*nr
     nr3 = nr2*nr
     nr4 = nr3*nr
-    nr5 =
+    nr5 = nr4*nr
+    R = skewfromvect(r)
+    C1 = -(nr-sin(nr))/nr3 * dot(Eps,R)
+    C2 = 
