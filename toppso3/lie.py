@@ -217,4 +217,7 @@ def Ctensor(r):
     R = skewfromvect(r)
     C1 = -(nr-sin(nr))/nr3 * dot(Eps,R)
     C2 = -(2*cos(nr)+nr*sin(nr)-2)/nr4 * TensorProd(r,R)
-    C3 = (3*sin(nr)-nr*cos(nr) - 2*n
+    C3 = (3*sin(nr)-nr*cos(nr) - 2*nr)/nr5 * TensorProd(r,dot(R,R))
+    return C1+C2+C3
+
+def Cterm(r,rd):
