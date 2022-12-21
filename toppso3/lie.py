@@ -221,3 +221,9 @@ def Ctensor(r):
     return C1+C2+C3
 
 def Cterm(r,rd):
+    nr = linalg.norm(r)
+    nr2 = nr*nr
+    nr3 = nr2*nr
+    nr4 = nr3*nr
+    nr5 = nr4*nr
+   
