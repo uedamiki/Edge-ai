@@ -227,4 +227,6 @@ def Cterm(r,rd):
     nr4 = nr3*nr
     nr5 = nr4*nr
     C1 = (nr-sin(nr))/nr3 * cross(rd,cross(r,rd))
-    C2 = -(2*cos(nr)+nr*sin(nr)-2)/nr4 * dot(r,
+    C2 = -(2*cos(nr)+nr*sin(nr)-2)/nr4 * dot(r,rd)*cross(r,rd)
+    C3 = (3*sin(nr)-nr*cos(nr) - 2*nr)/nr5 * dot(r,rd)*cross(r,cross(r,rd))
+ 
