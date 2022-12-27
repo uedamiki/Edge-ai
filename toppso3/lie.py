@@ -236,4 +236,6 @@ def omega(r,rd):
     return dot(Amat(r),rd)
 
 def alpha(r,rd,rdd):
-    
+    return dot(Bmat(r),rdd) + dot(rd,tensordot(Ctensor(r),rd,([2],[0])))
+
+def tau(r
