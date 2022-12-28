@@ -240,4 +240,10 @@ def alpha(r,rd,rdd):
 
 def tau(r,rd,rdd,I):
     omega0 = omega(r,rd)
-    return dot(I,alpha(r,rd,rdd)) + cross
+    return dot(I,alpha(r,rd,rdd)) + cross(omega0,dot(I,omega0))
+
+
+def InterpolateSO3(R0,R1,omega0,omega1,T):
+
+    r1 = logvect(dot(R0.T,R1))
+   
