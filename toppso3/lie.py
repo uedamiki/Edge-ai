@@ -246,4 +246,8 @@ def tau(r,rd,rdd,I):
 def InterpolateSO3(R0,R1,omega0,omega1,T):
 
     r1 = logvect(dot(R0.T,R1))
-   
+    u = linalg.solve(Amat(r1),omega1*T)
+
+    c = omega0*T
+    M = array([[1,0,0,1,0,0],
+               [
