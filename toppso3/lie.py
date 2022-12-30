@@ -250,4 +250,7 @@ def InterpolateSO3(R0,R1,omega0,omega1,T):
 
     c = omega0*T
     M = array([[1,0,0,1,0,0],
-               [
+               [0,1,0,0,1,0],
+               [0,0,1,0,0,1],
+               [3,0,0,2,0,0],
+             
