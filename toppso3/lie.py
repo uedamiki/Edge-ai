@@ -265,4 +265,9 @@ def InterpolateSO3(R0,R1,omega0,omega1,T):
     x = linalg.solve(M,y)
     a = x[:3]
     b = x[3:]
-    T2
+    T2 = T*T
+    T3 = T2*T
+    polylist = []
+
+    for i in range(3):
+        po
