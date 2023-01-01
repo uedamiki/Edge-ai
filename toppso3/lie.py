@@ -260,3 +260,9 @@ def InterpolateSO3(R0,R1,omega0,omega1,T):
                r1[2]-c[2],
                u[0]-c[0],
                u[1]-c[1],
+               u[2]-c[2]])
+
+    x = linalg.solve(M,y)
+    a = x[:3]
+    b = x[3:]
+    T2
