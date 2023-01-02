@@ -271,4 +271,9 @@ def InterpolateSO3(R0,R1,omega0,omega1,T):
 
     for i in range(3):
         polylist.append(Trajectory.Polynomial([0,c[i]/T,b[i]/T2,a[i]/T3]))
-    chunk = Trajectory.Chunk(T,
+    chunk = Trajectory.Chunk(T,polylist)
+    return Trajectory.PiecewisePolynomialTrajectory([chunk])
+    
+
+
+de
