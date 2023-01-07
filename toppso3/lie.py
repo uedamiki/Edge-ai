@@ -281,4 +281,7 @@ def EvalRotation(R0,traj,t):
     
 
 def TensorProd(a,A):
-    re
+    res = zeros((3,3,3))
+    for i in range(3):
+        res[i,:,:] = a[i]*A
+    return r
