@@ -276,4 +276,9 @@ def InterpolateSO3(R0,R1,omega0,omega1,T):
     
 
 
-de
+def EvalRotation(R0,traj,t):
+    return(dot(R0,expmat(traj.Eval(t))))
+    
+
+def TensorProd(a,A):
+    re
