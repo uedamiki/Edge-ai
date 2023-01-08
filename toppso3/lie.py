@@ -284,4 +284,9 @@ def TensorProd(a,A):
     res = zeros((3,3,3))
     for i in range(3):
         res[i,:,:] = a[i]*A
-    return r
+    return res
+
+
+def ComputeSO3Torques(rtraj, I = None, dt=0.01):
+    if I is None:
+        
