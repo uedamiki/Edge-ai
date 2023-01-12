@@ -289,4 +289,7 @@ def TensorProd(a,A):
 
 def ComputeSO3Torques(rtraj, I = None, dt=0.01):
     if I is None:
-        
+        I = eye(3)
+    tvect = arange(0, rtraj.duration + dt, dt)
+    tauvect = []
+    fo
