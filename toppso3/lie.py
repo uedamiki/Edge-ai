@@ -292,4 +292,7 @@ def ComputeSO3Torques(rtraj, I = None, dt=0.01):
         I = eye(3)
     tvect = arange(0, rtraj.duration + dt, dt)
     tauvect = []
-    fo
+    for t in tvect:
+        r = rtraj.Eval(t)
+        rd = rtraj.Evald(t)
+        rdd = rtraj.Evaldd(t
