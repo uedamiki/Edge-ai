@@ -295,4 +295,7 @@ def ComputeSO3Torques(rtraj, I = None, dt=0.01):
     for t in tvect:
         r = rtraj.Eval(t)
         rd = rtraj.Evald(t)
-        rdd = rtraj.Evaldd(t
+        rdd = rtraj.Evaldd(t)
+        taut = tau(r,rd,rdd,I)
+        tauvect.append(taut)
+    return tvect,array(tauvect)
