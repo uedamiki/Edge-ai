@@ -299,3 +299,7 @@ def ComputeSO3Torques(rtraj, I = None, dt=0.01):
         taut = tau(r,rd,rdd,I)
         tauvect.append(taut)
     return tvect,array(tauvect)
+    
+
+def ComputeSO3Constraints(rtraj, taumax, discrtimestep, I = None):
+    ndiscrsteps =
