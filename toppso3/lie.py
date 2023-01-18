@@ -302,4 +302,6 @@ def ComputeSO3Torques(rtraj, I = None, dt=0.01):
     
 
 def ComputeSO3Constraints(rtraj, taumax, discrtimestep, I = None):
-    ndiscrsteps =
+    ndiscrsteps = int((rtraj.duration + 1e-10) / discrtimestep) + 1
+    a = zeros((ndiscrsteps,6))
+    b = zeros((ndiscrs
