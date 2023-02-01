@@ -307,4 +307,7 @@ def ComputeSO3Constraints(rtraj, taumax, discrtimestep, I = None):
     b = zeros((ndiscrsteps,6))
     c = zeros((ndiscrsteps,6))
     for i in range(ndiscrsteps):
-        t =
+        t = i * discrtimestep
+        r = rtraj.Eval(t)
+        rd = rtraj.Evald(t)
+        rdd = rtr
