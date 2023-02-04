@@ -314,4 +314,9 @@ def ComputeSO3Constraints(rtraj, taumax, discrtimestep, I = None):
         nr = linalg.norm(r)
         nr2 = nr*nr
         nr3 = nr2*nr
-        nr4
+        nr4 = nr3*nr
+        nr5 = nr4*nr
+        R = skewfromvect(r)
+
+        snr = sin(nr)
+        cn
