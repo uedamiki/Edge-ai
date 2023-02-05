@@ -319,4 +319,8 @@ def ComputeSO3Constraints(rtraj, taumax, discrtimestep, I = None):
         R = skewfromvect(r)
 
         snr = sin(nr)
-        cn
+        cnr = cos(nr)
+        rcrd = cross(r,rd)
+        rdrd = dot(r,rd)
+        
+        Amat =  e
