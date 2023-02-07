@@ -323,4 +323,5 @@ def ComputeSO3Constraints(rtraj, taumax, discrtimestep, I = None):
         rcrd = cross(r,rd)
         rdrd = dot(r,rd)
         
-        Amat =  e
+        Amat =  eye(3) - (1-cnr)/nr2*R + (nr-snr)/nr3*dot(R,R)
+        C1 = (nr-snr)/nr3 * cross(rd,rcrd)
