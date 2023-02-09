@@ -331,4 +331,7 @@ def ComputeSO3Constraints(rtraj, taumax, discrtimestep, I = None):
 
         Ard = dot(Amat,rd)
         if I is None:            
-         
+            at = Ard
+            bt = dot(Amat,rdd) + C
+        else:
+            at = dot(I
