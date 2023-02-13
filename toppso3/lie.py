@@ -346,3 +346,7 @@ def ComputeSO3Constraints(rtraj, taumax, discrtimestep, I = None):
     return a, b, c
 
 def RandomQuat():
+    s = random.rand()
+    sigma1 = sqrt(1-s)
+    sigma2 = sqrt(s)
+    theta1 = 
