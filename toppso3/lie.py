@@ -340,4 +340,9 @@ def ComputeSO3Constraints(rtraj, taumax, discrtimestep, I = None):
         a[i,:3] = at
         a[i,3:] = -at
         b[i,:3] = bt
-        b[i,3
+        b[i,3:] = -bt
+        c[i,:3] = -taumax
+        c[i,3:] = -taumax
+    return a, b, c
+
+def RandomQuat():
