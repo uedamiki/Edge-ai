@@ -349,4 +349,6 @@ def RandomQuat():
     s = random.rand()
     sigma1 = sqrt(1-s)
     sigma2 = sqrt(s)
-    theta1 = 
+    theta1 = 2*pi*random.rand()
+    theta2 = 2*pi*random.rand()
+    w = cos(thet
