@@ -358,4 +358,9 @@ def RandomQuat():
     return array([w,x,y,z])
     
 
-def InterpolateSO3ZeroOmega(R0,R1,T
+def InterpolateSO3ZeroOmega(R0,R1,T):
+    r = logvect(dot(R0.T,R1))
+    a = ones(3)*(-2)
+    b = ones(3)*3
+    T2 = T*T
+  
