@@ -363,4 +363,7 @@ def InterpolateSO3ZeroOmega(R0,R1,T):
     a = ones(3)*(-2)
     b = ones(3)*3
     T2 = T*T
-  
+    T3 = T2*T
+    polylist = []
+    for i in range(3):
+        polylist.append(Trajectory.Polynomial
