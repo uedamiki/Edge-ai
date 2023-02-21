@@ -366,4 +366,6 @@ def InterpolateSO3ZeroOmega(R0,R1,T):
     T3 = T2*T
     polylist = []
     for i in range(3):
-        polylist.append(Trajectory.Polynomial
+        polylist.append(Trajectory.Polynomial([0,0,r[i]*b[i]/T2,r[i]*a[i]/T3]))
+    chunk = Trajectory.Chunk(T,polylist)
+    return
