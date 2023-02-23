@@ -371,4 +371,6 @@ def InterpolateSO3ZeroOmega(R0,R1,T):
     return Trajectory.PiecewisePolynomialTrajectory([chunk])
 
 def Extractabc(abc):
-    lista = [float(x) fo
+    lista = [float(x) for x in abc[0].split()]
+    listb = [float(x) for x in abc[1].split()]
+    listc = [float(x) for x in ab
