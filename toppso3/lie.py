@@ -380,4 +380,6 @@ def Extractabc(abc):
     c = zeros((n,6))
     for i in range(n):
         a[i,:] = lista[i*6:i*6+6]
-        
+        b[i,:] = listb[i*6:i*6+6]
+        c[i,:] = listc[i*6:i*6+6]
+    return a, b, c
