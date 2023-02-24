@@ -377,4 +377,7 @@ def Extractabc(abc):
     n= len(lista)/6
     a = zeros((n,6))
     b = zeros((n,6))
-    c =
+    c = zeros((n,6))
+    for i in range(n):
+        a[i,:] = lista[i*6:i*6+6]
+        
